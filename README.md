@@ -18,6 +18,10 @@ Link: https://github.com/alirezadavooditeacher/CICCCWMDP2019_202/blob/master/WMA
 Java Tutorial For Beginners: https://www.youtube.com/watch?v=r59xYe3Vyks&list=PLS1QulWo1RIbfTjQvTdj8Y6yyq4R7g-Al <br />
 MIT Java Programming: https://www.youtube.com/playlist?list=PLXqaWKDQpdPn4UJ2fOFxl6Yl_DC51FFUL  <br />
 
+## Useful Links
+PlantText UML Editor: https://www.planttext.com/ 
+PlantText is an online tool that quickly generates images from text. Primarily, it is used to generate UML (Unified Modeling Language) diagrams. It is based on a text language called PlantUML. 
+
 
 # Course TimeTable
 ## Week1
