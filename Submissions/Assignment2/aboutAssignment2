@@ -1,0 +1,10 @@
+Please use meaningful name for your variables and functions
+- Try to reuse your solutions as much as possible.
+- For each of the following problem you need to
+o Define a class
+o Define required methods (instance or static or combinations)
+o For all test cases you have already written for your algorithm, write a function call
+inside the main method of the ApplicationDriver class
+- Define an ApplicationDrievr class with a main method inside of it.
+- Write the test cases for each class in the main method of the ApplicationDriver class.
+- There is going to be only one ApplicationDriver class and one main method.
