@@ -120,9 +120,9 @@ public class EducationalPortal {
                     char gender = account.getStudent().getStudentProfile().getGender();
                     String name = account.getStudent().getStudentProfile().getName();
                     try {
-                        account.getStudent().getGt().printMyCourses(gender, name);
+                        account.getStudent().printMyCourses(gender, name);
                     } catch (NullPointerException e) {
-                        System.out.println("\nYou haven't taken any classes yet.\n");
+                        System.out.println(getNotTakenYetText());
                     }
                     continue;
                 case "3":
@@ -359,7 +359,7 @@ public class EducationalPortal {
         try {
             gpa = String.format("%.1f", account.getStudent().getGt().getGpa());
         } catch (NullPointerException e) {
-            System.out.println("\nYou haven't taken any classes yet.\n");
+            System.out.println(getNotTakenYetText());
             return;
         }
         String currentGpa = String.format("%.1f", account.getStudent().getCst().getGpa());
@@ -379,13 +379,18 @@ public class EducationalPortal {
         try {
             myGpa = myAccount.getStudent().getGt().getGpa();
         } catch (NullPointerException e) {
-            System.out.println("\nYou haven't taken any classes yet.\n");
+            System.out.println(getNotTakenYetText());
             return;
         }
         String gpa = String.format("%.1f", myGpa);
         ArrayList<Double> grades = new ArrayList<>();
         for (Account account : getAccounts()) {
-            grades.add(account.getStudent().getGt().getGpa());
+            try {
+                grades.add(account.getStudent().getGt().getGpa());
+            } catch (NullPointerException e) {
+                // this error is occurred by new registrant
+                // don't need to do nothing because new registrants are bottom of the rank
+            }
         }
         grades.sort(Collections.reverseOrder());
         int rank = 1;
@@ -409,7 +414,7 @@ public class EducationalPortal {
         try {
             takenCourses = account.getStudent().getGt().getTakenCourses();
         } catch (NullPointerException e) {
-            System.out.println("\nYou haven't taken any classes yet.\n");
+            System.out.println(getNotTakenYetText());
             return;
         }
         int length = courses.size();
@@ -459,6 +464,10 @@ public class EducationalPortal {
                 }
             }
         }
+    }
+
+    private String getNotTakenYetText() {
+        return "\nYou haven't taken any classes yet.\n";
     }
 
 }

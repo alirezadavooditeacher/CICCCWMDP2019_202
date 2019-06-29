@@ -1,5 +1,9 @@
 package wmadp201_assginment4_group.src;
 
+import wmadp201_assginment4_group.src.Transcript.CurrentSemesterTranscript;
+import wmadp201_assginment4_group.src.Transcript.GeneralTranscript;
+
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Student {
@@ -44,19 +48,18 @@ public class Student {
         String title = Util.getTitleForName(sp.getGender());
         String name = sp.getName();
 
-        String generalTranscript = "";
+        String generalTranscript;
         try {
-            generalTranscript = getGt().getGeneralTranscript();
+            generalTranscript = getGt().getTranscript();
         } catch (NullPointerException e) {
             return "\nYou haven't taken any classes yet.\n";
         }
-        String currentSemesterTranscript = getCst().getCurrentSemesterTranscript();
+        String currentSemesterTranscript = getCst().getTranscript();
 
-        String s = "\nHi " + title + name + ",\n" +
+        return "\nHi " + title + name + ",\n" +
                 generalTranscript +
                 "\n" +
                 currentSemesterTranscript + "\n";
-        return s;
     }
 
     public void printMyEnrolmentCertificate() {
@@ -73,7 +76,7 @@ public class Student {
         String studentId = sp.getStudentId();
         int admission = sp.getYearOfAdmission();
         int semester = sp.getStudentsSemester();
-        int numberOfCourseTaken = 0;
+        int numberOfCourseTaken;
         try {
             numberOfCourseTaken = getGt().getTakenCourses().size();
         } catch (NullPointerException e) {
@@ -82,7 +85,7 @@ public class Student {
         String address = sp.getAddress();
         String managerName = EducationalPortal.getManager().getName();
 
-        String s = "\nDear Sir/Madam,\n" +
+        return "\nDear Sir/Madam,\n" +
                 "\n" +
                 "This is to certify that " + title + name + " with student id " + studentId + " is a student at semester " + semester
                 + " at CICCC. \n" +
@@ -92,7 +95,6 @@ public class Student {
                 "If you have any question, please don’t hesitate to contact us.\n" +
                 "Thanks,\n" +
                 "[Manager’s name: " + managerName + " ],\n";
-        return s;
     }
 
     public void printMyProfile() {
@@ -103,7 +105,7 @@ public class Student {
 
         HashMap<String, String> map = getProfileInfo();
 
-        String s = "\nName: " + map.get("name") + "\n" +
+        return "\nName: " + map.get("name") + "\n" +
                 "StudentID: " + map.get("studentId") + "\n" +
                 "Gender: " + map.get("gender") + "\n" +
                 "Address: " + map.get("address") + "\n" +
@@ -113,7 +115,6 @@ public class Student {
                 "Overall GPA: " + map.get("gpa") + "\n" +
                 "Courses Taken So far: \n" +
                 "" + map.get("courseTakenString") + "\n";
-        return s;
     }
 
     public HashMap<String, String> getProfileInfo() {
@@ -163,5 +164,28 @@ public class Student {
         map.put("courseTakenString", courseTakenString);
 
         return map;
+    }
+
+    public void printMyCourses(char gender, String name) {
+        System.out.println(getMyCourses(gender, name));
+    }
+
+    public String getMyCourses(char gender, String name) {
+
+        String title = Util.getTitleForName(gender);
+        ArrayList<TakenCourse> takenCourses = getGt().getTakenCourses();
+        String coursesString = "";
+        for (int i = 0; i < takenCourses.size(); i++) {
+            TakenCourse takenCourse = takenCourses.get(i);
+            coursesString += (i + 1) + ") " + takenCourse.getCode() + ": " + takenCourse.getName();
+            if (takenCourse.getSemester() == getStudentProfile().getStudentsSemester()) {
+                coursesString += "[Current semester]";
+            }
+            coursesString += "\n";
+        }
+
+        return "\nHi " + title + name + ",\n" +
+                "You have taken the following courses so far:\n" +
+                coursesString + "\n";
     }
 }

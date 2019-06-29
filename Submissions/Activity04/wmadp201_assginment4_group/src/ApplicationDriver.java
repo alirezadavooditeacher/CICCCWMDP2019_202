@@ -1,5 +1,8 @@
 package wmadp201_assginment4_group.src;
 
+import wmadp201_assginment4_group.src.Transcript.CurrentSemesterTranscript;
+import wmadp201_assginment4_group.src.Transcript.GeneralTranscript;
+
 /**
  * Application Driver
  */
