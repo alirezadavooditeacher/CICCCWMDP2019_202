@@ -43,6 +43,8 @@ Github Video Tutorial: https://www.youtube.com/watch?v=SWYqp7iY_Tc
 - Lecture: Inhertance + Interfaces
 - Lecture: OOP design
 - One session on how to use github for the assignment
+- Inheritance, Polymorphism+SuperClass/Class example (in-class coding)
+- Inheritance, Polymorphism+Shape example (in-class coding)
 - Assignment 5
 
 ## Week4
