@@ -111,6 +111,10 @@ public class StudentProfile {
 
         System.out.println( "Please enter your gender [M/F/O]:" );
         this.gender = input.nextLine();
+        while(!gender.equals( "M" ) && !gender.equals( "F" ) && !gender.equals( "O" )){
+            System.out.println( "Please try again, please enter your gender [M/F/O]" );
+            this.gender = input.nextLine();
+        }
 
         System.out.println( "Please enter your country of origin:" );
         this.countryOfOrigin = input.nextLine();

@@ -5,7 +5,7 @@ public class Transcript {
     private String courseName;
     private int courseNumber;
     private int courseGrade;
-    private int nuits;
+    private int units;
     private int numberOfSemester;
 
     public int getCourseGrade() {
@@ -16,8 +16,8 @@ public class Transcript {
         return courseNumber;
     }
 
-    public int getNuits() {
-        return nuits;
+    public int getUnits() {
+        return units;
     }
 
     public int getNumberOfSemester() {
@@ -40,13 +40,20 @@ public class Transcript {
         this.courseNumber = courseNumber;
     }
 
-    public void setNuits(int nuits) {
-        this.nuits = nuits;
+    public void setUnits(int units) {
+        this.units = units;
     }
 
     public void setNumberOfSemester(int numberOfSemester) {
         this.numberOfSemester = numberOfSemester;
     }
 
-
+    public Transcript(String courseName, int courseNumber, int courseGrade, int units, int numberOfSemester){
+        super();
+        this.courseName = courseName;
+        this.courseNumber = courseNumber;
+        this.courseGrade = courseGrade;
+        this.units = units;
+        this.numberOfSemester = numberOfSemester;
+    }
 }
