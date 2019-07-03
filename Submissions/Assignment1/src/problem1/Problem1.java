@@ -2,7 +2,6 @@ package problem1;
 
 import java.util.Scanner;
 
-
 public class Problem1{
     public static class InputException extends Exception {
         @Override
