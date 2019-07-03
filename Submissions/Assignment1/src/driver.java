@@ -8,7 +8,7 @@ import problem7.*;
 
 public class driver {
     public static void main(String[] args) {
-//        problem1();
+        problem1();
         problem2();
         problem3();
         problem4();
@@ -17,12 +17,13 @@ public class driver {
         problem7();
     }
 
-//    public static void problem1() throws Problem1.InputException {
-//        Problem1.inputOperatorAndCalculator();
-//    }
+    public static void problem1(){
+        System.out.println( "-------- problem 1 --------" );
+        Problem1.inputOperatorAndCalculator();
+    }
 
     public static void problem2(){
-        System.out.println( "\n-------- problem 2 --------" );
+        System.out.println( "\n\n-------- problem 2 --------" );
         Problem2.printStars();
     }
 

@@ -3,66 +3,44 @@ package problem1;
 import java.util.Scanner;
 
 public class Problem1{
-    public static class InputException extends Exception {
-        @Override
-        public void printStackTrace() {
-            super.printStackTrace();
-            System.out.print( "Input is not valid." );
-        }
-    }
 
-    private static int inputFirstNumber() throws InputException{
+    private static int inputFirstNumber(){
         Scanner scannerOne = new Scanner( System.in );
         System.out.print( "Please enter a number: " );
-        String A = scannerOne.nextLine();
-        int firstNumber = 0;
-
-        if ((A != null) && (A.matches( "^[0.0-9.0]+$" ))){
-            firstNumber = Integer.parseInt( A );
-        } else {
-            throw new InputException();
-        }
+        int firstNumber = scannerOne.nextInt();
         return firstNumber;
     }
 
-    private static int inputSecondNumber()  throws InputException{
+    private static int inputSecondNumber(){
         Scanner scannerOne = new Scanner( System.in );
-        System.out.print( "Please enter a number: " );
-        String B = scannerOne.nextLine();
-        int secondNumber = 0;
-
-        if ((B != null) && (B.matches( "^[0.0-9.0]+$" ))) {
-            secondNumber = Integer.parseInt( B );
-        } else {
-            throw new InputException();
-        }
+        System.out.print( "Please enter another number: " );
+        int secondNumber = scannerOne.nextInt();
         return secondNumber;
     }
 
-    public static void inputOperatorAndCalculator() throws InputException {
-        int number1 = Problem1.inputFirstNumber();
-        int number2 = Problem1.inputSecondNumber();
-
-        Scanner scannerOperator = new Scanner( System.in );
+    public static void inputOperatorAndCalculator(){
+        int number1 = inputFirstNumber();
+        int number2 = inputSecondNumber();
+        Scanner scannerOne = new Scanner( System.in );
         System.out.print( "Please enter an operator: " );
-        String operator = scannerOperator.nextLine();
+        String operator = scannerOne.nextLine();
 
-        if (operator == "/") {
-            if (number2 == 0){
-                System.out.print( "The second input can not be 0" );
-            } else {
-                int ans = number1 / number2;
-                System.out.print( "The answer is : " + ans );
+        if (operator.equals( "/" )) {
+            while (number2 == 0){
+                System.out.print( "The second input can not be 0, please try again.\nPlease enter another number: " );
+                number2 = scannerOne.nextInt();
             }
-        } else if (operator == "+"){
+            int ans = number1 / number2;
+            System.out.print( "The answer is " + ans );
+        } else if (operator.equals( "+" )){
             int ans = number1 + number2;
-            System.out.print( "The answer is : " + ans );
-        } else if (operator == "-"){
+            System.out.print( "The answer is " + ans );
+        } else if (operator.equals( "-" )){
             int ans = number1 - number2;
-            System.out.print( "The answer is : " + ans );
-        } else if (operator == "*"){
+            System.out.print( "The answer is " + ans );
+        } else if (operator.equals( "*" )){
             int ans = number1 * number2;
-            System.out.print( "The answer is : " + ans );
+            System.out.print( "The answer is " + ans );
         } else {
             System.out.print( "Input operator is not valid." );
         }
