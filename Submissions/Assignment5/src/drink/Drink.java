@@ -8,6 +8,5 @@ Integer drinkSize;
 		super(integer, productName,productPrice,madeInCountry);
 		this.isDrinkDiet=isDiet;
 		this.drinkSize=size;
-		
 	}
 }
