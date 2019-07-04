@@ -3,6 +3,7 @@ import drink.Drink;
 import food.Food;
 import material.Material;
 import product.*;
+import shoppingCart.*;
 public class applicationDriver {
 
 	public static void main(String[] args) {
@@ -14,7 +15,10 @@ public class applicationDriver {
 		Material m2=new Material(22,"Nylon");
 		Material listOfMaterial[]= {m1,m2};
 		Cloth c1=new Cloth(87,"Shorts",25,"China",listOfMaterial);
-		System.out.println("Run Forest Run");
+		ShoppingCart sp1=new ShoppingCart();
+		sp1.addProduct(p1);
+		sp1.addProduct(drink);
+		sp1.printProductsTotalPrice();
 	}
 	
 }
