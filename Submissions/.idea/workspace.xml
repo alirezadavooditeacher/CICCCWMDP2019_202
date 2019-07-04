@@ -8,6 +8,28 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignment1/AssignmentJava/src/main/Main.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assignment1/AssignmentJava/src/problem1/Problem1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -23,6 +45,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -31,44 +54,17 @@
               <item name="Submissions" type="b2602c69:ProjectViewProjectNode" />
               <item name="Submissions" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Submissions" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Submissions" type="462c0819:PsiDirectoryNode" />
-              <item name="Assignment1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Submissions" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Submissions" type="462c0819:PsiDirectoryNode" />
-              <item name="Assignment1" type="462c0819:PsiDirectoryNode" />
-              <item name="AssignmentJava" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Submissions" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Submissions" type="462c0819:PsiDirectoryNode" />
-              <item name="Assignment1" type="462c0819:PsiDirectoryNode" />
-              <item name="AssignmentJava" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Submissions" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Submissions" type="462c0819:PsiDirectoryNode" />
-              <item name="Assignment1" type="462c0819:PsiDirectoryNode" />
-              <item name="AssignmentJava" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -96,16 +92,19 @@
       <updated>1561681934949</updated>
       <workItem from="1561681936157" duration="13000" />
       <workItem from="1561682007171" duration="28000" />
+      <workItem from="1562181819061" duration="59000" />
+      <workItem from="1562181904467" duration="650000" />
+      <workItem from="1562182881421" duration="45000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41000" />
+    <option name="totallyTimeSpent" value="795000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2534413" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26639676" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -137,5 +136,20 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assignment1/AssignmentJava/AssignmentJava.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment1/AssignmentJava/src/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment1/AssignmentJava/src/problem1/Problem1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
