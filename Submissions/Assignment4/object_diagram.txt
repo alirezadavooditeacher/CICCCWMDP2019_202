@@ -1,0 +1,115 @@
+Classes Diagram. 
+
+@startuml
+
+title Assignment4 Shin/Guille - Class Diagram
+
+
+class Account {
+  +String userName
+  +String password
+  +void Constructor()
+}
+
+class Profile{
+   +String name
+   +String lastName
+   +Char gender
+   +String adrress
+   +String country
+   +int age
+   +int admissionYear
+   +float gpa
+   
+   +void Constructor(name, lastName,gender,...)
+   +String getName()
+   +void getAllProfile()
+}
+
+class Student {
+   +ArrayList<Student> static allStudents
+   +int admissionYear
+   +int currentYear
+   +TranscriptGeneral generalTranscript
+   +TranscriptSemester semesterTranscript
+   +Profile profile
+   +void Constructor(admissionYear,CurrentYear, 
+   +void showAllStudents()
+   +void printEnrollmentCertificate()
+   +void printMyCourses()
+   +void printGeneralTranscript()
+   +void printGPA()
+   +void printMyRanking(String profile.getName())
+   +void printAvailableCourses()
+   +void printAllStudents()
+   +void printMyProfile()
+   **Note: Constructor include default generalTranscript, default semesterTranscript)
+   **Note: add the student to the allStudents arraylist.
+}
+class GeneralTranscript{
+   +String[] courseList
+   +HashMap<String,Float> courseGradeMap
+   +HashMap<String,int> courseIntakeSemester
+   +HashMax<String, Float> studentGPAMap
+   +void generalTranscripPrinter()
+   +void createSemesterTranscript()
+   +ArrayList<String> getCourseList()
+   +float claculateGPA()
+   +int getMyGPARanking(String studentName)
+
+}
+class SemesterTranscript{
+   +String[] courseList
+   +HashMap<String,Float> courseGradeMap
+   +void semesterTranscriptPrinter()
+}
+
+
+
+class Course {
+  -ArrayList<Course> AllCourses
+  -String name
+  -String code
+  -int numberOfUnits
+  -int studentGrade
+  -int numberOfSemester
+  
+  +void showAllCourses()
+  +void addMyCourses(int CourseNum)
+}
+
+class RegistrationSystem {
+  -Object studentProfile
+  -int courseNum
+  
+  void setAccount(studentProfile)
+  void setProfile(studentProfile)
+  void setCourse(courseNum)
+}
+
+
+Student "1" *-up- "1" Account: Composition
+Student "1" *-up- "1" Profile: Composition
+Student "1" o-- "many" Course: Aggregation
+Student "1" o-- "1" RegistrationSystem: Aggregation
+Student "1" *-up- "1" GeneralTranscript: Composition
+Student "1" *-up- "1" SemesterTranscript: Composition
+GeneralTranscript .. SemesterTranscript: Dependency
+
+
+
+@endumls
+
+
+
+
+
+
+
+
+https://github.com/mondai40/JavaAssignment4/invitations
+
+
+Classes relationship Diagram.
+
+
