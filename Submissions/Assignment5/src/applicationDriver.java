@@ -19,6 +19,7 @@ public class applicationDriver {
 		sp1.addProduct(p1);
 		sp1.addProduct(drink);
 		sp1.printProductsTotalPrice();
+		sp1.printProductsNames();
 	}
 	
 }

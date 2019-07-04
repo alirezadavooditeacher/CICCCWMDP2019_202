@@ -32,4 +32,15 @@ public class ShoppingCart {
 		
 		System.out.println("The total price of products in the Shopping Cart is:"+priceSum);
 	}
+	public void printProductsNames() {
+		System.out.println("The products in the ShoppingCart are: ");
+		Iterator<Product> it=this.productsInShoppingCart.iterator();
+		while(it.hasNext()) {
+			Product product=it.next();
+			String productName=product.getProductName();
+			System.out.println(productName);
+		}
+		System.out.println("==========================================");
+	}
+	
 }
