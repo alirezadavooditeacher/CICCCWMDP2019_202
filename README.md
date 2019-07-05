@@ -22,6 +22,7 @@ MIT Java Programming: https://www.youtube.com/playlist?list=PLXqaWKDQpdPn4UJ2fOF
 PlantText UML Editor: https://www.planttext.com/ 
 PlantText is an online tool that quickly generates images from text. Primarily, it is used to generate UML (Unified Modeling Language) diagrams. It is based on a text language called PlantUML. 
 
+Github Video Tutorial: https://www.youtube.com/watch?v=SWYqp7iY_Tc
 
 # Course TimeTable
 ## Week1
@@ -41,6 +42,7 @@ PlantText is an online tool that quickly generates images from text. Primarily, 
 ## Week3
 - Lecture: Inhertance + Interfaces
 - Lecture: OOP design
+- One session on how to use github for the assignment
 - Assignment 5
 
 ## Week4
