@@ -2,7 +2,7 @@ package services;
 
 public class CarRepairServiceProvider {
 
-    public CarRepairSerivceProtocolInterface delegate;
+    public CarRepairServiceProtocolInterface delegate;
 
     public void receiveService(){
         CarRepairService crs = this.delegate.carRepairService();

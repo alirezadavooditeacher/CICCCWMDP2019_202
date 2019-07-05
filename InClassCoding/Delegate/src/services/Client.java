@@ -1,6 +1,6 @@
 package services;
 
-public class Client implements ServiceProtocolInterface, CleaningServiceProtocolInterface{
+public class Client implements ServiceProtocolInterface, CleaningServiceProtocolInterface, CarRepairServiceProtocolInterface{
 
 	private String name;
 	private String address;
@@ -99,5 +99,13 @@ public class Client implements ServiceProtocolInterface, CleaningServiceProtocol
 		// TODO Auto-generated method stub
 		CleaningService cleaningService = new CleaningService("Cleaning Service");
 		return cleaningService;
+	}
+
+	public CarRepairService carRepairService() {
+		String description = "Repair my back axle";
+		String carModel = "Dodge Caravan";
+
+		CarRepairService crs = new CarRepairService(description, carModel);
+		return crs;
 	}
 }
