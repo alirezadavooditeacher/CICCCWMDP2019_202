@@ -48,6 +48,8 @@ Github Video Tutorial: https://www.youtube.com/watch?v=SWYqp7iY_Tc
 - Assignment 5
 
 ## Week4
+- Lecture about delegate/protocol
+- Lecture about MVC (Model-View-Controller)
 ## Week5
 ## Week6
 ## Week7
