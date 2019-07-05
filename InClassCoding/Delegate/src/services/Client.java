@@ -7,6 +7,7 @@ public class Client implements ServiceProtocolInterface, CleaningServiceProtocol
 	private String contactNo;
 	private PaintingProvider paintingProvider;
 	private CleaningProvider cleaningProvider;
+	private CarRepairServiceProvider carRepairServiceProvider;
 	
 	public Client(String name, String address, String contactNo) {
 		super();
@@ -43,6 +44,8 @@ public class Client implements ServiceProtocolInterface, CleaningServiceProtocol
 		this.cleaningProvider = cleaningP;
 		this.cleaningProvider.delegate = this;
 	}
+
+	public void setCarcclea
 	//=======================
 //	@Override
 //	public String jobDescription() {
@@ -89,7 +92,6 @@ public class Client implements ServiceProtocolInterface, CleaningServiceProtocol
 		String painingColor = "Pink";
 		int size = 1000;
 		String address = "Hastings";
-		
 		PaintingService ps = new PaintingService(description, startDate, expectedEndDate, painingColor, size, address);
 		return ps;
 	}
@@ -104,7 +106,6 @@ public class Client implements ServiceProtocolInterface, CleaningServiceProtocol
 	public CarRepairService carRepairService() {
 		String description = "Repair my back axle";
 		String carModel = "Dodge Caravan";
-
 		CarRepairService crs = new CarRepairService(description, carModel);
 		return crs;
 	}
