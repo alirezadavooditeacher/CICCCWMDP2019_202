@@ -1,7 +1,5 @@
 package homeWork;
 
-import services.ServiceProtocolInterface;
-
 public class HomeServiceProvider {
 	private String name;
 	private String address;

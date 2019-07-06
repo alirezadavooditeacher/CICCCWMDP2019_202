@@ -1,5 +1,7 @@
 package services;
 
+import homeWork.ServiceProtocolInterface;
+
 public class PaintingProvider {
 
 	private String name;

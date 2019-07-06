@@ -11,6 +11,7 @@ public class Client implements ServiceProtocolInterface, CleaningServiceProtocol
 	private CleaningProvider cleaningProvider;
 	private CarRepairServiceProvider carRepairProvider;
 	private HomeServiceProvider homeProvider;
+	private StudentServiceProvider studentProvider;
 	
 	public Client(String name, String address, String contactNo) {
 		super();
@@ -51,6 +52,8 @@ public class Client implements ServiceProtocolInterface, CleaningServiceProtocol
 		this.homeProvider=homep;
 		this.homeProvider.delegate=this;
 	}
+	
+	
 	//=======================
 //	@Override
 //	public String jobDescription() {
@@ -87,6 +90,12 @@ public class Client implements ServiceProtocolInterface, CleaningServiceProtocol
 //		// TODO Auto-generated method stub
 //		return "June 2019";
 //	}
+
+	public void setStudentProvider(StudentServiceProvider studentProvider) {
+		this.studentProvider = studentProvider;
+		this.studentProvider.delegate=this;
+		
+	}
 
 	@Override
 	public PaintingService paintingService() {
@@ -151,8 +160,23 @@ public class Client implements ServiceProtocolInterface, CleaningServiceProtocol
 		String level="Intermediate";
 		StudentService stus= new StudentService(topic, level);
 		boolean optionalNotificationAsk=needOptionalNotification;
+		notificationOrder(needOptionalNotification, topic, level);
 		return stus;
 	}
+
+	private void notificationOrder(boolean needOptionalNotification, String topic, String level) {
+		this.studentProvider.notificationService(needOptionalNotification, topic, level);
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void NotificationInbox() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
 	
 	
 }
