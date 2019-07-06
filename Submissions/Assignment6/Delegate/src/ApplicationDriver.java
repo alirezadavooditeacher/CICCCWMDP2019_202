@@ -19,6 +19,11 @@ public class ApplicationDriver {
 		usuario.setCarRepairProvider(carProvider);
 		carProvider.recieveService();
 		
+		HomeServiceProvider homeWorker= new HomeServiceProvider("Juanes","Richmond","JuanClean");
+		usuario.setHomeServiceProvider(homeWorker);
+		homeWorker.recieveBabbyService();
+		homeWorker.recieveCookingService();
+		homeWorker.recieveWashingService();
 		
 //		String description = "Paint my bedroom";
 //		String startDate = "May 2019";

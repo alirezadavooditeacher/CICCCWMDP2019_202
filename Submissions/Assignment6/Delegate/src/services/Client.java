@@ -10,6 +10,7 @@ public class Client implements ServiceProtocolInterface, CleaningServiceProtocol
 	private PaintingProvider paintingProvider;
 	private CleaningProvider cleaningProvider;
 	private CarRepairServiceProvider carRepairProvider;
+	private HomeServiceProvider homeProvider;
 	
 	public Client(String name, String address, String contactNo) {
 		super();
@@ -45,6 +46,10 @@ public class Client implements ServiceProtocolInterface, CleaningServiceProtocol
 	public void setCleaniningProvider(CleaningProvider cleaningP) {
 		this.cleaningProvider = cleaningP;
 		this.cleaningProvider.delegate = this;
+		}
+	public void setHomeServiceProvider(HomeServiceProvider homep) {
+		this.homeProvider=homep;
+		this.homeProvider.delegate=this;
 	}
 	//=======================
 //	@Override
@@ -117,6 +122,27 @@ public class Client implements ServiceProtocolInterface, CleaningServiceProtocol
 		String carModel="toyota pathfinder"	;
 		CarRepairService cs=new CarRepairService(description,startDate,expectedEndDate,carModel);
 		return cs;
+	}
+	
+	public BabyService babyService() {
+		String date="Jul11";
+		int hour=12;
+		BabyService babyServ=new BabyService(date, hour);
+		return babyServ;
+	}
+	public WashingService washingService() {
+		String date="Jul10";
+		int hour=9;
+		WashingService washs=new WashingService(date, hour);
+		return washs;
+	}
+	
+	public CookingService cookService() {
+		String name="Pita Wrap";
+		int portions=20;
+		int price=350;
+		CookingService cooks=new CookingService(name,portions,price);
+		return cooks;
 	}
 	
 }

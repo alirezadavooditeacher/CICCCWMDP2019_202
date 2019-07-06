@@ -28,6 +28,7 @@ public class HomeServiceProvider {
 	}
 	public void recieveBabbyService() {
 		BabyService bs=this.delegate.babyService();
-		//TODO
+		System.out.println(bs.getDate());
+		System.out.println(bs.getHour());
 	}
 }
