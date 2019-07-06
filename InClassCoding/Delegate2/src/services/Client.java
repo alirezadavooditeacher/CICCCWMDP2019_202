@@ -102,14 +102,18 @@ public class Client implements ServiceProtocolInterface, CleaningServiceProtocol
 	@Override
 	public CleaningService cleaningService() {
 		// TODO Auto-generated method stub
-		CleaningService cleaningService = new CleaningService("Cleaning Service");
+		String startDate = "May 2019";
+		String expectedEndDate = "June 2019";
+		CleaningService cleaningService = new CleaningService("Cleaning Service", startDate, expectedEndDate);
 		return cleaningService;
 	}
 
 	public CarRepairService carRepairService() {
 		String description = "Repair my back axle";
 		String carModel = "Dodge Caravan";
-		CarRepairService crs = new CarRepairService(description, carModel);
+		String startDate = "May 2019";
+		String expectedEndDate = "June 2019";
+		CarRepairService crs = new CarRepairService(description, startDate, expectedEndDate, carModel);
 		return crs;
 	}
 }

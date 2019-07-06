@@ -1,20 +1,14 @@
 package services;
 
-public class CarRepairService {
-    private String description;
+public class CarRepairService extends Service {
     private String carModel;
-
-    public String getDescription() {
-        return description;
-    }
 
     public String getCarModel() {
         return carModel;
     }
 
-    public CarRepairService(String description, String carModel){
-        super();
-        this.description = description;
+    public CarRepairService(String description, String startDate, String endDate, String carModel){
+        super(description, startDate, endDate);
         this.carModel = carModel;
     }
 }
