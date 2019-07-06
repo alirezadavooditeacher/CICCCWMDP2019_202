@@ -4,35 +4,6 @@
     <list default="true" id="e4ddf4d9-0551-4036-bc06-6b779573d687" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/services/InformationService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/services/InformationServiceProtocolInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Delegate2/.idea/Delegate.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Delegate2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Delegate2/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Delegate2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Delegate2/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Delegate2/production/production/Delegate/ApplicationDriver.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Delegate2/production/production/Delegate/services/CarRepairService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Delegate2/production/production/Delegate/services/CarRepairServiceProtocolInterface.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Delegate2/production/production/Delegate/services/CarRepairServiceProvider.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Delegate2/production/production/Delegate/services/CleaningProvider.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Delegate2/production/production/Delegate/services/CleaningService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Delegate2/production/production/Delegate/services/CleaningServiceProtocolInterface.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Delegate2/production/production/Delegate/services/Client.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Delegate2/production/production/Delegate/services/PaintingProvider.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Delegate2/production/production/Delegate/services/PaintingService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Delegate2/production/production/Delegate/services/ServiceProtocolInterface.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Delegate2/src/ApplicationDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Delegate2/src/services/CarRepairService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Delegate2/src/services/CarRepairServiceProtocolInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Delegate2/src/services/CarRepairServiceProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Delegate2/src/services/CleaningProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Delegate2/src/services/CleaningService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Delegate2/src/services/CleaningServiceProtocolInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Delegate2/src/services/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Delegate2/src/services/InformationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Delegate2/src/services/InformationServiceProtocolInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Delegate2/src/services/PaintingProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Delegate2/src/services/PaintingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Delegate2/src/services/ServiceProtocolInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/CarRepairServiceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/CarRepairServiceProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Client.java" afterDir="false" />
@@ -47,13 +18,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../Delegate2/src/services/Client.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -91,6 +56,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="Delegate" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Delegate" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="Delegate" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Delegate" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Delegate" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Delegate" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="services" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -113,14 +100,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -130,11 +116,6 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/.." />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -175,18 +156,17 @@
       <workItem from="1562292943100" duration="3325000" />
       <workItem from="1562297736399" duration="441000" />
       <workItem from="1562299687216" duration="3827000" />
-      <workItem from="1562376977488" duration="3182000" />
-      <workItem from="1562383100799" duration="31000" />
+      <workItem from="1562376977488" duration="3146000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10806000" />
+    <option name="totallyTimeSpent" value="10739000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="977" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26144835" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25878593" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -353,9 +333,6 @@
           <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Delegate2/src/services/Client.java">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
