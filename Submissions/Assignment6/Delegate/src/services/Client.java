@@ -144,5 +144,15 @@ public class Client implements ServiceProtocolInterface, CleaningServiceProtocol
 		CookingService cooks=new CookingService(name,portions,price);
 		return cooks;
 	}
+
+	@Override
+	public StudentService studentService(boolean needOptionalNotification) {
+		String topic="Chemistry";
+		String level="Intermediate";
+		StudentService stus= new StudentService(topic, level);
+		boolean optionalNotificationAsk=needOptionalNotification;
+		return stus;
+	}
+	
 	
 }
