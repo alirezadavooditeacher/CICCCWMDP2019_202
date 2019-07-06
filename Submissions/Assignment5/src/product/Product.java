@@ -19,4 +19,17 @@ public class Product {
 		this.productPrice = productPrice;
 		this.productMadeInCountry = productMadeInCountry;
 	}
+	public String getProductName() {
+		return productName;
+	}
+	public void setProductName(String productName) {
+		this.productName = productName;
+	}
+	public float getProductPrice() {
+		return productPrice;
+	}
+	public void setProductPrice(float productPrice) {
+		this.productPrice = productPrice;
+	}
+	
 }
