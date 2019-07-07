@@ -1,6 +1,13 @@
-package services;
+package homeWork;
+
+import java.util.Scanner;
 
 import homeWork.*;
+import services.CleaningProvider;
+import services.CleaningService;
+import services.CleaningServiceProtocolInterface;
+import services.PaintingProvider;
+import services.PaintingService;
 
 public class Client implements ServiceProtocolInterface, CleaningServiceProtocolInterface{
 
@@ -155,28 +162,20 @@ public class Client implements ServiceProtocolInterface, CleaningServiceProtocol
 	}
 
 	@Override
-	public StudentService studentService(boolean needOptionalNotification) {
+	public StudentService studentService() {
 		String topic="Chemistry";
 		String level="Intermediate";
 		StudentService stus= new StudentService(topic, level);
-		boolean optionalNotificationAsk=needOptionalNotification;
-		notificationOrder(needOptionalNotification, topic, level);
+//		Scanner s= new Scanner(System.in);
+//		System.out.println("Does the client need notification? Write true/false");
+//		boolean needOptionalNotification=s.nextBoolean();
+//		notificationOrder(needOptionalNotification, topic, level);
 		return stus;
 	}
 
-	private void notificationOrder(boolean needOptionalNotification, String topic, String level) {
-		this.studentProvider.notificationService(needOptionalNotification, topic, level);
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void NotificationInbox() {
-		// TODO Auto-generated method stub
-		
-	}
-	
-	
-	
+//	private void notificationOrder(boolean needOptionalNotification, String topic, String level) {
+//		this.studentProvider.notificationService(needOptionalNotification, topic, level);
+//		
+//	}
 	
 }

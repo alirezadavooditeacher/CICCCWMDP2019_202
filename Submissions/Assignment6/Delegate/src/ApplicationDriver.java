@@ -25,6 +25,10 @@ public class ApplicationDriver {
 		homeWorker.recieveCookingService();
 		homeWorker.recieveWashingService();
 		
+		StudentServiceProvider studentWorker = new StudentServiceProvider("Mathew","Burnaby","MathewMath");
+		usuario.setStudentProvider(studentWorker);
+		studentWorker.recieveStudentService();
+		
 //		String description = "Paint my bedroom";
 //		String startDate = "May 2019";
 //		String expectedEndDate = "June 2019";

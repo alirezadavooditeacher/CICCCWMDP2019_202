@@ -15,6 +15,6 @@ public interface ServiceProtocolInterface {
 	public CookingService cookService();
 	public WashingService washingService();
 	public BabyService babyService();
-	public StudentService studentService(boolean needNotification);
-	public void NotificationInbox();
+	public StudentService studentService();
+	
 }
