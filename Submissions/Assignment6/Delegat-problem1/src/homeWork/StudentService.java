@@ -1,8 +1,7 @@
 package homeWork;
 
-public class StudentService {
-	String topic;
-	String level;
+public class StudentService extends Service{
+
 	
 	public StudentService(String topic, String level) {
 		super();
@@ -10,22 +9,4 @@ public class StudentService {
 		this.level = level;
 	}
 
-	public String getTopic() {
-		return topic;
-	}
-
-	public void setTopic(String topic) {
-		this.topic = topic;
-	}
-
-	public String getLevel() {
-		return level;
-	}
-
-	public void setLevel(String level) {
-		this.level = level;
-	}
-	
-	
-	
 }
