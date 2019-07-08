@@ -102,9 +102,13 @@ public class Client implements ServiceProtocolInterface{
 		this.studentProvider.delegate=this;
 		
 	}
-
 	@Override
-	public PaintingService paintingService() {
+	public Service orderService() {
+		Service serv= new Service();
+		return serv;
+	}
+	@Override
+	public Service paintingService() {
 		// TODO Auto-generated method stub
 		String description = "Paint my bedroom";
 		String startDate = "May 2019";
@@ -113,7 +117,7 @@ public class Client implements ServiceProtocolInterface{
 		int size = 1000;
 		String address = "Hastings";
 		
-		PaintingService ps = new PaintingService(description, startDate, expectedEndDate, painingColor, size, address);
+		Service ps = new PaintingService(description, startDate, expectedEndDate, painingColor, size, address);
 		return ps;
 	}
 

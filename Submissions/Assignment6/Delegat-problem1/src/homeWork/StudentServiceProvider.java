@@ -2,16 +2,13 @@ package homeWork;
 
 import java.util.Scanner;
 
-public class StudentServiceProvider {
-	private String name;
-	private String adress;
-	private String company;
-	public ServiceProtocolInterface delegate;
+public class StudentServiceProvider extends Provider {
 	
+		
 	public StudentServiceProvider(String name, String adress, String company) {
 		super();
 		this.name = name;
-		this.adress = adress;
+		this.address = adress;
 		this.company = company;
 	}
 	

@@ -1,7 +1,7 @@
 package services;
 import homeWork.*;
 
-public class CleaningProvider {
+public class CleaningProvider extends Provider{
 
 	public ServiceProtocolInterface delegate; //delegate
 	

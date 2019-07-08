@@ -10,7 +10,8 @@ public interface ServiceProtocolInterface {
 //	public String startDate();
 //	public String expectedEndDate();
 	
-	public PaintingService paintingService();
+	public Service orderService();
+	public Service paintingService();
 	public CarRepairService carRepairService();
 	public CookingService cookService();
 	public WashingService washingService();

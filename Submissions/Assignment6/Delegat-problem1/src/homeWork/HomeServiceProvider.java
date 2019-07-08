@@ -1,10 +1,7 @@
 package homeWork;
 
-public class HomeServiceProvider {
-	private String name;
-	private String address;
-	private String company;
-	public ServiceProtocolInterface delegate;
+public class HomeServiceProvider extends Provider {
+	
 	
 	public HomeServiceProvider(String name, String address, String company) {
 		super();

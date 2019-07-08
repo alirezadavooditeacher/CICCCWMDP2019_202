@@ -2,11 +2,8 @@ package homeWork;
 
 import services.*;
 
-public class CarRepairServiceProvider {
-	private String name;
-	private String address;
-	private String company;
-	public ServiceProtocolInterface delegate;
+public class CarRepairServiceProvider extends Provider {
+	
 	
 	public CarRepairServiceProvider(String name, String address, String company) {
 		super();
