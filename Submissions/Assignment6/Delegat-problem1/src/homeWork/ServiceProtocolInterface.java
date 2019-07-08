@@ -16,5 +16,6 @@ public interface ServiceProtocolInterface {
 	public WashingService washingService();
 	public BabyService babyService();
 	public StudentService studentService();
+	public CleaningService cleaningService();
 	
 }

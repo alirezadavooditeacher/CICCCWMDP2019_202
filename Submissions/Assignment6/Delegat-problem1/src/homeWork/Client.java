@@ -5,11 +5,10 @@ import java.util.Scanner;
 import homeWork.*;
 import services.CleaningProvider;
 import services.CleaningService;
-import services.CleaningServiceProtocolInterface;
 import services.PaintingProvider;
 import services.PaintingService;
 
-public class Client implements ServiceProtocolInterface, CleaningServiceProtocolInterface{
+public class Client implements ServiceProtocolInterface{
 
 	private String name;
 	private String address;
