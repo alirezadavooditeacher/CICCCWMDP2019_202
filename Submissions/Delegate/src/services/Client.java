@@ -1,12 +1,14 @@
 package services;
 
-public class Client implements ServiceProtocolInterface, CleaningServiceProtocolInterface{
+public class Client implements ServiceProtocolInterface, CleaningServiceProtocolInterface, CarRepairServiceProtocolInterface , HomeServiceProtocolInterface{
 
 	private String name;
 	private String address;
 	private String contactNo;
 	private PaintingProvider paintingProvider;
 	private CleaningProvider cleaningProvider;
+	private CarRepairServiceProvider carRepairServiceProvider;
+	private HomeServiceProvider homeServiceProvider;
 	
 	public Client(String name, String address, String contactNo) {
 		super();
@@ -43,42 +45,16 @@ public class Client implements ServiceProtocolInterface, CleaningServiceProtocol
 		this.cleaningProvider = cleaningP;
 		this.cleaningProvider.delegate = this;
 	}
-	//=======================
-//	@Override
-//	public String jobDescription() {
-//		// TODO Auto-generated method stub
-//		return "This is a painting job of my bedroom";
-//	}
-//
-//	@Override
-//	public String address() {
-//		// TODO Auto-generated method stub
-//		return "Vancouver";
-//	}
-//
-//	@Override
-//	public String paintColor() {
-//		// TODO Auto-generated method stub
-//		return "Pink";
-//	}
-//
-//	@Override
-//	public int size() {
-//		// TODO Auto-generated method stub
-//		return 1000;
-//	}
-//
-//	@Override
-//	public String startDate() {
-//		// TODO Auto-generated method stub
-//		return "May 2019";
-//	}
-//
-//	@Override
-//	public String expectedEndDate() {
-//		// TODO Auto-generated method stub
-//		return "June 2019";
-//	}
+
+	public void setCarRepairServiceProvider(CarRepairServiceProvider carRepairServiceProvider) {
+		this.carRepairServiceProvider = carRepairServiceProvider;
+		this.carRepairServiceProvider.delegate = this;
+	}
+
+	public void setHomeServiceProvider(HomeServiceProvider homeServiceProvider) {
+		this.homeServiceProvider = homeServiceProvider;
+		this.homeServiceProvider.delegate = this;
+	}
 
 	@Override
 	public PaintingService paintingService() {
@@ -99,5 +75,25 @@ public class Client implements ServiceProtocolInterface, CleaningServiceProtocol
 		// TODO Auto-generated method stub
 		CleaningService cleaningService = new CleaningService("Cleaning Service");
 		return cleaningService;
+	}
+
+	@Override
+	public CarRepairService carRepairService() {
+		return null;
+	}
+
+	@Override
+	public CookingService cookingService() {
+		return null;
+	}
+
+	@Override
+	public WashingService washingService() {
+		return null;
+	}
+
+	@Override
+	public BabySittingService babysittingService() {
+		return null;
 	}
 }

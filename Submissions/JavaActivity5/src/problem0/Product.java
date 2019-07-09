@@ -3,9 +3,6 @@ package problem0;
 public class Product {
 
     private int prdouctID;
-
-
-
     private String productName;
     private float productPrice;
     private String productMadeInCountry;

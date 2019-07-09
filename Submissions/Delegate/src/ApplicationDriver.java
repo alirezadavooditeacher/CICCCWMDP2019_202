@@ -13,6 +13,14 @@ public class ApplicationDriver {
 		CleaningProvider cProvider = new CleaningProvider();
 		client.setCleaniningProvider(cProvider);
 		cProvider.receiveService();
+
+		CarRepairServiceProvider carProvider = new CarRepairServiceProvider();
+		client.setCarRepairServiceProvider(carProvider);
+		carProvider.receiveService();
+
+		HomeServiceProvider homeServiceProvider = new HomeServiceProvider();
+		client.setHomeServiceProvider(homeServiceProvider);
+		homeServiceProvider.reveiveService();
 		
 		
 //		String description = "Paint my bedroom";

@@ -6,6 +6,8 @@ public class CleaningProvider {
 	
 	public void receiveService() {
 		CleaningService cs = this.delegate.cleaningService();
-		System.out.println(cs.getDescription());
+		String description = cs.getDescription();
+
+		System.out.println("description"+description);
 	}
 }
