@@ -1,6 +1,4 @@
 package services;
 
-public interface InformationServiceProtocolInterface {
-
-    public InformationService informationService();
+public interface InformationServiceProtocolInterface extends ServiceProtocolInterface {
 }

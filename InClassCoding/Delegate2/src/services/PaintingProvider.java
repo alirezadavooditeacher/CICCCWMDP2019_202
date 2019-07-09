@@ -5,7 +5,7 @@ public class PaintingProvider {
 	private String name;
 	private String address;
 	private String company;
-	public ServiceProtocolInterface delegate; //delegate
+	public PaintingServiceProtocolInterface delegate; //delegate
 	
 	public PaintingProvider(String name, String address, String company) {
 		super();
@@ -35,14 +35,11 @@ public class PaintingProvider {
 	
 	public void receiveService() {
 		
-		PaintingService ps = this.delegate.paintingService();
-		
-		System.out.println(ps.getAddress());
+		PaintingService ps = this.delegate.paintService();
+
 		System.out.println(ps.getExpectedEndDate());
 		System.out.println(ps.getStartDate());
 		System.out.println(ps.getDescription());
-		System.out.println(ps.getSize());
-		System.out.println(ps.getPainingColor());
 	}
 	
 }

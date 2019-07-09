@@ -1,12 +1,11 @@
 package services;
 
-public class Client implements ServiceProtocolInterface, CleaningServiceProtocolInterface, CarRepairServiceProtocolInterface{
+public class Client implements CarRepairServiceProtocolInterface, PaintingServiceProtocolInterface{
 
 	private String name;
 	private String address;
 	private String contactNo;
 	private PaintingProvider paintingProvider;
-	private CleaningProvider cleaningProvider;
 	private CarRepairServiceProvider carRepairServiceProvider;
 	
 	public Client(String name, String address, String contactNo) {
@@ -38,11 +37,6 @@ public class Client implements ServiceProtocolInterface, CleaningServiceProtocol
 	public void setPaintingProvider(PaintingProvider paintingP) {
 		this.paintingProvider = paintingP;
 		this.paintingProvider.delegate = this;
-	}
-	
-	public void setCleaniningProvider(CleaningProvider cleaningP) {
-		this.cleaningProvider = cleaningP;
-		this.cleaningProvider.delegate = this;
 	}
 
 	public void setCarRepairServiceProvider(CarRepairServiceProvider carRepairP) {
@@ -86,8 +80,7 @@ public class Client implements ServiceProtocolInterface, CleaningServiceProtocol
 //		return "June 2019";
 //	}
 
-	@Override
-	public PaintingService paintingService() {
+	public PaintingService paintService() {
 		// TODO Auto-generated method stub
 		String description = "Paint my bedroom";
 		String startDate = "May 2019";
@@ -97,15 +90,6 @@ public class Client implements ServiceProtocolInterface, CleaningServiceProtocol
 		String address = "Hastings";
 		PaintingService ps = new PaintingService(description, startDate, expectedEndDate, painingColor, size, address);
 		return ps;
-	}
-
-	@Override
-	public CleaningService cleaningService() {
-		// TODO Auto-generated method stub
-		String startDate = "May 2019";
-		String expectedEndDate = "June 2019";
-		CleaningService cleaningService = new CleaningService("Cleaning Service", startDate, expectedEndDate);
-		return cleaningService;
 	}
 
 	public CarRepairService carRepairService() {

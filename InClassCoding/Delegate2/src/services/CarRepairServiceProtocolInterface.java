@@ -1,6 +1,6 @@
 package services;
 
-public interface CarRepairServiceProtocolInterface {
+public interface CarRepairServiceProtocolInterface extends ServiceProtocolInterface{
 
     public CarRepairService carRepairService();
 }
