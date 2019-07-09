@@ -2,28 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4ddf4d9-0551-4036-bc06-6b779573d687" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/services/PaintingServiceProtocolInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/Provider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/production/production/Delegate/ApplicationDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/production/production/Delegate/ApplicationDriver.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/production/production/Delegate/services/CarRepairService.class" beforeDir="false" afterPath="$PROJECT_DIR$/production/production/Delegate/services/CarRepairService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/production/Delegate/services/CarRepairServiceProtocolInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/production/production/Delegate/services/CarRepairServiceProtocolInterface.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/production/production/Delegate/services/CarRepairServiceProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/production/production/Delegate/services/CarRepairServiceProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/production/Delegate/services/CleaningProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/production/Delegate/services/CleaningService.class" beforeDir="false" afterPath="$PROJECT_DIR$/production/production/Delegate/services/CleaningService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/production/Delegate/services/CleaningServiceProtocolInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/production/production/Delegate/services/CleaningServiceProtocolInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/production/Delegate/services/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/production/production/Delegate/services/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/production/Delegate/services/CleaningService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/production/Delegate/services/CleaningServiceProtocolInterface.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/production/production/Delegate/services/PaintingProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/production/production/Delegate/services/PaintingProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/production/Delegate/services/PaintingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/production/production/Delegate/services/PaintingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/production/Delegate/services/ServiceProtocolInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/production/production/Delegate/services/ServiceProtocolInterface.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ApplicationDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApplicationDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/CarRepairServiceProtocolInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/CarRepairServiceProtocolInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/CarRepairService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/CarRepairService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/CarRepairServiceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/CarRepairServiceProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/CleaningProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/CleaningServiceProtocolInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/CleaningServiceProtocolInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/InformationServiceProtocolInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/InformationServiceProtocolInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/PaintingProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/PaintingProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/ServiceProtocolInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ServiceProtocolInterface.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ApplicationDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+            <state relative-caret-position="165">
+              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -65,17 +55,18 @@
         <option value="$PROJECT_DIR$/src/services/InformationService.java" />
         <option value="$PROJECT_DIR$/src/services/Service.java" />
         <option value="$PROJECT_DIR$/src/services/CleaningService.java" />
-        <option value="$PROJECT_DIR$/src/services/CarRepairService.java" />
         <option value="$PROJECT_DIR$/src/services/PaintingService.java" />
         <option value="$PROJECT_DIR$/src/services/InformationServiceProtocolInterface.java" />
         <option value="$PROJECT_DIR$/src/services/CleaningProvider.java" />
         <option value="$PROJECT_DIR$/src/services/ServiceProtocolInterface.java" />
-        <option value="$PROJECT_DIR$/src/services/PaintingProvider.java" />
         <option value="$PROJECT_DIR$/src/services/PaintingServiceProtocolInterface.java" />
         <option value="$PROJECT_DIR$/src/services/CarRepairServiceProtocolInterface.java" />
         <option value="$PROJECT_DIR$/src/services/CleaningServiceProtocolInterface.java" />
-        <option value="$PROJECT_DIR$/src/services/CarRepairServiceProvider.java" />
         <option value="$PROJECT_DIR$/src/services/Client.java" />
+        <option value="$PROJECT_DIR$/src/services/Provider.java" />
+        <option value="$PROJECT_DIR$/src/services/CarRepairService.java" />
+        <option value="$PROJECT_DIR$/src/services/CarRepairServiceProvider.java" />
+        <option value="$PROJECT_DIR$/src/services/PaintingProvider.java" />
         <option value="$PROJECT_DIR$/src/ApplicationDriver.java" />
       </list>
     </option>
@@ -194,18 +185,18 @@
       <workItem from="1562299687216" duration="3827000" />
       <workItem from="1562376977488" duration="3146000" />
       <workItem from="1562383156247" duration="5886000" />
-      <workItem from="1562645209541" duration="582000" />
+      <workItem from="1562645209541" duration="2028000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17207000" />
+    <option name="totallyTimeSpent" value="18653000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="973" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24121405" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24121405" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -214,7 +205,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3291714" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3291714" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -283,13 +274,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/CarRepairService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/services/InformationServiceProtocolInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -297,24 +281,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/PaintingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/services/ServiceProtocolInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -332,13 +302,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/CarRepairServiceProtocolInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/services/CleaningProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -353,31 +316,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/CarRepairServiceProvider.java">
+    <entry file="file://$PROJECT_DIR$/src/services/Provider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/CarRepairServiceProtocolInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/CarRepairServiceProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+          <folding>
+            <element signature="e#212#213#0" expanded="true" />
+            <element signature="e#257#258#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/CarRepairService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/PaintingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/services/PaintingProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="41" column="48" lean-forward="true" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+        <state relative-caret-position="180">
+          <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+          <folding>
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#239#240#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/services/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="91" column="18" lean-forward="true" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="18" />
+        <state relative-caret-position="594">
+          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ApplicationDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        <state relative-caret-position="165">
+          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
         </state>
       </provider>
     </entry>

@@ -1,42 +1,16 @@
 package services;
 
-public class PaintingProvider {
+public class PaintingProvider extends Provider {
 
-	private String name;
-	private String address;
-	private String company;
 	public PaintingServiceProtocolInterface delegate; //delegate
 	
 	public PaintingProvider(String name, String address, String company) {
-		super();
-		this.name = name;
-		this.address = address;
-		this.company = company;
-	}
-	
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getAddress() {
-		return address;
-	}
-	public void setAddress(String address) {
-		this.address = address;
-	}
-	public String getCompany() {
-		return company;
-	}
-	public void setCompany(String company) {
-		this.company = company;
+		super(name, address, company);
 	}
 	
 	public void receiveService() {
 		
 		PaintingService ps = this.delegate.paintService();
-
 		System.out.println(ps.getExpectedEndDate());
 		System.out.println(ps.getStartDate());
 		System.out.println(ps.getDescription());

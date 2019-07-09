@@ -9,6 +9,10 @@ public class ApplicationDriver {
 		PaintingProvider provider = new PaintingProvider("David", "Burnaby", "YourBestPainter");
 		client.setPaintingProvider(provider);
 		provider.receiveService();
+		System.out.println("--------------");
+		CarRepairServiceProvider carRepair = new CarRepairServiceProvider("Tommy", "Mexico", "Los Polos Hermanos");
+		client.setCarRepairServiceProvider(carRepair);
+		carRepair.receiveService();
 	}
 
 }
