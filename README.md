@@ -58,6 +58,7 @@ Standford Video: https://www.youtube.com/watch?v=gI3pz7eFgfo&t=645s
 - Assignment 6 about Delegate and Protocol
 - Lecture about MVC (Model-View-Controller)
 ## Week5
+- Discussion about Observer-Observable - The Java built-in is depricated.
 ## Week6
 ## Week7
 ## Week8
