@@ -8,11 +8,19 @@ public class Problem11 {
         System.out.println( "Please enter a  number :" );
         String firstInput = input11.nextLine();
         int firstNumber = 0;
+
         for (int i = 0; i < firstInput.length(); i++) {
-            if (Character.isDigit(firstInput.charAt(i))) {
-                firstNumber = Integer.parseInt(firstInput);
+            if (firstInput.charAt( 0 ) == '-'){
+                for (int j = 1; j < firstInput.length(); j++){
+                    if (Character.isDigit(firstInput.charAt(j))) {
+                        firstNumber = Integer.parseInt( firstInput );
+                    }
+                }
+            } else if (Character.isDigit(firstInput.charAt(i))){
+                firstNumber = Integer.parseInt( firstInput );
             }
         }
+
         return firstNumber;
     }
 
@@ -21,11 +29,19 @@ public class Problem11 {
         System.out.println( "Please enter another  number :" );
         String secondInput = input11.nextLine();
         int secondNumber = 0;
+
         for (int i = 0; i < secondInput.length(); i++) {
-            if (Character.isDigit( secondInput.charAt( i ) )) {
+            if (secondInput.charAt( 0 ) == '-'){
+                for (int j = 1; j < secondInput.length(); j++){
+                    if (Character.isDigit(secondInput.charAt(j))) {
+                        secondNumber = Integer.parseInt( secondInput );
+                    }
+                }
+            } else if (Character.isDigit(secondInput.charAt(i))){
                 secondNumber = Integer.parseInt( secondInput );
             }
         }
+
         return secondNumber;
     }
 
@@ -35,7 +51,6 @@ public class Problem11 {
         int secondNumber = secondInput();
         int max = 0;
         int min = 0;
-        int temp = 0;
         boolean check = false;
 
         if (firstNumber == 0){
@@ -54,23 +69,38 @@ public class Problem11 {
         }
 
         int count = 0;
+        int temp = 0;
         while (check == true){
             System.out.println( "Please enter another  number :" );
             String inputs = input11.next();
             for (int i = 0; i < inputs.length(); i++) {
-                if (Character.isDigit(inputs.charAt(i))) {
-                    count ++;
-                    if (count == inputs.length()){
-                        int number = Integer.parseInt(inputs);
+                if (inputs.charAt( 0 ) == '-'){
+                    for (int j = 1; j < inputs.length(); j++){
+                        if (Character.isDigit(inputs.charAt(j))) {
+                            temp = Integer.parseInt( inputs );
+                            if (temp > max){
+                                max = temp;
+                            } else if (temp < min){
+                                min = temp;
+                            }
+                        }
+                    }
+                } else if (Character.isDigit(inputs.charAt(i))){
+                    temp = Integer.parseInt( inputs );
+                    if (temp > max){
+                        max = temp;
+                    } else if (temp < min){
+                        min = temp;
                     }
                 } else {
                     check = false;
                 }
             }
-
         }
 
-        System.out.println( "Max = " + max + "\nMin = " + min );
+
+        int distance = Math.abs( (max - min) );
+        System.out.println( "Max = " + max + "\nMin = " + min + "\nThe distance is " + distance );
 
     }
 }
