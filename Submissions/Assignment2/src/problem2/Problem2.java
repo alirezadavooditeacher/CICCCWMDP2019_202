@@ -1,20 +1,36 @@
 package problem2;
 
+import problem0.Problem0;
 import java.util.ArrayList;
 
 public class Problem2 {
-    public static void problem2(ArrayList<Integer> problem2List) {
-        System.out.println( problem2List );
+    public static void problem2() {
+        ArrayList<Integer> arrayList = new ArrayList<Integer>(  );
+        arrayList.add( 10 );
+        arrayList.add( 109 );
+        arrayList.add( 10 );
+        arrayList.add( 10 );
+        arrayList.add( 14 );
+        arrayList.add( 112 );
+        arrayList.add( 14 );
+        arrayList.add( 10 );
+        arrayList.add( 14 );
+        arrayList.add( 5 );
+        arrayList.add( 5 );
 
-        for (int i = 0; i < problem2List.size(); i++) {
-            for (int j = i + 1; j < problem2List.size(); j++) {
-                if (problem2List.get( i ).equals( problem2List.get( j ) )) {
-                    problem2List.remove( problem2List.get( i ) );
-                    break;
+        System.out.println( "The original list : " + arrayList );
+
+        ArrayList<Integer> distinctArray = new ArrayList<Integer>( arrayList );
+        ArrayList<Integer> repeatNumbers = Problem0.newArrayList(arrayList);
+
+        for (int i = 0; i < arrayList.size(); i++) {
+            for (int j = 0; j < repeatNumbers.size(); j++) {
+                if (arrayList.get( i ).equals( repeatNumbers.get( j ) )) {
+                    distinctArray.remove( arrayList.get( i ) );
                 }
             }
         }
 
-        System.out.println( problem2List );
+        System.out.println( "The list of distinct numbers : " + distinctArray );
     }
 }
