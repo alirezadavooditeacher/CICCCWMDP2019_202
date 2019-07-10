@@ -1,16 +1,16 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class Table {
+public class Table implements TableCreation {
 
-    public static void createTable(ArrayList<Student> students){
+    public void createTable(ArrayList<Student> students){
         Iterator<Student> si = students.iterator();
         while(si.hasNext()){
-            Table.createRow(si.next());
+            this.createRow(si.next());
         }
     }
 
-    private static void createRow(Student student){
+    private void createRow(Student student){
         System.out.println(student.getName() + ", " + student.getGrade());
         System.out.println("----------------");
     }
