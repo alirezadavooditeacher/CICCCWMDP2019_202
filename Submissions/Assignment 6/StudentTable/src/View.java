@@ -1,15 +1,30 @@
 import java.util.ArrayList;
 
-public class View {
+public class View implements TableCreation {
+    private Table table;
     private ArrayList<Student> students;
-    private Table delegate;
 
     public View(ArrayList<Student> students) {
         this.students = students;
-        this.delegate = new Table();
+        this.table = new Table();
+        this.table.delegate = this;
+
     }
 
-    public void createTable(){
-        this.delegate.createTable(this.students);
+
+    void ArrayList<Student> getListOfStudent(){
+        return this.students;
     }
+
+    Student getStudentForRow(int rowNumber){
+        return this.students.get(rowNumber);
+    }
+
+    int getNumberOfStudent(){
+        return this.students.size();
+
+    }
+
+
+
 }
