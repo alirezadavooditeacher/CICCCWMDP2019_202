@@ -1,5 +1,6 @@
-package services;
-import homeWork.*;
+package homeWork;
+
+import services.*;
 public interface ServiceProtocolInterface {
 
 //	public String jobDescription();
@@ -14,4 +15,6 @@ public interface ServiceProtocolInterface {
 	public CookingService cookService();
 	public WashingService washingService();
 	public BabyService babyService();
+	public StudentService studentService();
+	
 }

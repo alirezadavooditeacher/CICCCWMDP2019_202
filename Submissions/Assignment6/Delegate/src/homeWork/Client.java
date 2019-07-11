@@ -1,6 +1,13 @@
-package services;
+package homeWork;
+
+import java.util.Scanner;
 
 import homeWork.*;
+import services.CleaningProvider;
+import services.CleaningService;
+import services.CleaningServiceProtocolInterface;
+import services.PaintingProvider;
+import services.PaintingService;
 
 public class Client implements ServiceProtocolInterface, CleaningServiceProtocolInterface{
 
@@ -10,6 +17,8 @@ public class Client implements ServiceProtocolInterface, CleaningServiceProtocol
 	private PaintingProvider paintingProvider;
 	private CleaningProvider cleaningProvider;
 	private CarRepairServiceProvider carRepairProvider;
+	private HomeServiceProvider homeProvider;
+	private StudentServiceProvider studentProvider;
 	
 	public Client(String name, String address, String contactNo) {
 		super();
@@ -45,7 +54,13 @@ public class Client implements ServiceProtocolInterface, CleaningServiceProtocol
 	public void setCleaniningProvider(CleaningProvider cleaningP) {
 		this.cleaningProvider = cleaningP;
 		this.cleaningProvider.delegate = this;
+		}
+	public void setHomeServiceProvider(HomeServiceProvider homep) {
+		this.homeProvider=homep;
+		this.homeProvider.delegate=this;
 	}
+	
+	
 	//=======================
 //	@Override
 //	public String jobDescription() {
@@ -83,6 +98,12 @@ public class Client implements ServiceProtocolInterface, CleaningServiceProtocol
 //		return "June 2019";
 //	}
 
+	public void setStudentProvider(StudentServiceProvider studentProvider) {
+		this.studentProvider = studentProvider;
+		this.studentProvider.delegate=this;
+		
+	}
+
 	@Override
 	public PaintingService paintingService() {
 		// TODO Auto-generated method stub
@@ -118,5 +139,43 @@ public class Client implements ServiceProtocolInterface, CleaningServiceProtocol
 		CarRepairService cs=new CarRepairService(description,startDate,expectedEndDate,carModel);
 		return cs;
 	}
+	
+	public BabyService babyService() {
+		String date="Jul11";
+		int hour=12;
+		BabyService babyServ=new BabyService(date, hour);
+		return babyServ;
+	}
+	public WashingService washingService() {
+		String date="Jul10";
+		int hour=9;
+		WashingService washs=new WashingService(date, hour);
+		return washs;
+	}
+	
+	public CookingService cookService() {
+		String name="Pita Wrap";
+		int portions=20;
+		int price=350;
+		CookingService cooks=new CookingService(name,portions,price);
+		return cooks;
+	}
+
+	@Override
+	public StudentService studentService() {
+		String topic="Chemistry";
+		String level="Intermediate";
+		StudentService stus= new StudentService(topic, level);
+//		Scanner s= new Scanner(System.in);
+//		System.out.println("Does the client need notification? Write true/false");
+//		boolean needOptionalNotification=s.nextBoolean();
+//		notificationOrder(needOptionalNotification, topic, level);
+		return stus;
+	}
+
+//	private void notificationOrder(boolean needOptionalNotification, String topic, String level) {
+//		this.studentProvider.notificationService(needOptionalNotification, topic, level);
+//		
+//	}
 	
 }
