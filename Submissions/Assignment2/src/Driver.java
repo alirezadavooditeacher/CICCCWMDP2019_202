@@ -15,12 +15,18 @@ public class Driver {
 //        problem3();
 //        problem4();
 //        problem5();
-        problem6();
+//        problem6();
+        problem7();
+    }
+
+    private static void problem7() {
+        System.out.println( "\n-------- problem 7 --------" );
+
     }
 
     private static void problem6() {
         System.out.println( "\n-------- problem 6 --------" );
-        
+        Problem6.runProblem6();
     }
 
     private static void problem5() {
