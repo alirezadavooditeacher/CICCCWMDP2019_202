@@ -3,13 +3,34 @@ import problem0.*;
 import problem1.*;
 import problem2.*;
 import problem3.*;
+import problem4.*;
+import problem5.*;
+import problem6.*;
 
 public class Driver {
     public static void main(String[] args) {
-        problem0();
-        problem1();
-        problem2();
-        problem3();
+//        problem0();
+//        problem1();
+//        problem2();
+//        problem3();
+//        problem4();
+//        problem5();
+        problem6();
+    }
+
+    private static void problem6() {
+        System.out.println( "\n-------- problem 6 --------" );
+        
+    }
+
+    private static void problem5() {
+        System.out.println( "\n-------- problem 5 --------" );
+        Problem5.runProblem5();
+    }
+
+    private static void problem4() {
+        System.out.println( "\n-------- problem 4 --------" );
+
     }
 
     private static void problem3() {
