@@ -1,8 +1,6 @@
 package Student;
 
-import Provider;
-
-public class StudentServicesProvider extends  {
+public class StudentServicesProvider {
 
     public StudentServiceProtocolInterface delegate;
 

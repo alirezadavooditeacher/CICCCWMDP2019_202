@@ -1,6 +1,8 @@
 package Student;
 
-public class StudentService extends {
+import java.security.Provider;
+
+public class StudentService {
     private String name;
     private int semester;
 
