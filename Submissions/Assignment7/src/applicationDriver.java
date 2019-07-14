@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 import program1.*;
+import program3.*;
 
 public class applicationDriver {
 	
@@ -25,8 +26,19 @@ public class applicationDriver {
 			int sgpa = it.next().getGpa();
 			studentsGPA.add(sgpa);
 		}
-		
+		System.out.print("The number of students with a gpa greater than 60 is: ");
 		System.out.println(BusinessLogic.countNumberOfElementsWithSpecificProperty(studentsGPA, 60));
+		System.out.println("The student list before changin some elements is: ");
+		System.out.println(studentsList);
+		BusinessLogicP3.exchangeElements(studentsList, s1, s4);
+		System.out.println("The student list after changin some of its elements is: ");
+		System.out.print(studentsList);
+
+		
+
+		
+		
+
 		
 		
 	}
