@@ -67,9 +67,10 @@ https://docs.oracle.com/javase/tutorial/java/generics/index.html
 - Discussiion about Iterator/Iterable - Comparator/Comparable
 
 ## Week6
-- Inner/Nested/Local classes
+- Inner/Nested/Local classes: https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html
 - Seialization
 - Lambda expression/Functional Interfaces (1)
+- Enum: https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html
 
 ## Week7
 - Lambda expression/Functional Interfaces (2)
