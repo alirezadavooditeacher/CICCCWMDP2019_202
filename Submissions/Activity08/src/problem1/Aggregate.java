@@ -1,0 +1,5 @@
+package src.problem1;
+
+public interface Aggregate {
+    public abstract Iterator iterator();
+}

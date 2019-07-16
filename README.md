@@ -29,6 +29,9 @@ https://www.upgrad.com/blog/mvc-architecture-in-java/
 https://www.tutorialspoint.com/design_pattern/mvc_pattern.htm
 Standford Video: https://www.youtube.com/watch?v=gI3pz7eFgfo&t=645s
 
+Genrics:
+https://docs.oracle.com/javase/tutorial/java/generics/index.html
+
 
 # Course TimeTable
 ## Week1
@@ -58,6 +61,8 @@ Standford Video: https://www.youtube.com/watch?v=gI3pz7eFgfo&t=645s
 - Assignment 6 about Delegate and Protocol
 - Lecture about MVC (Model-View-Controller)
 ## Week5
+- Discussion about Observer-Observable - The Java built-in is depricated.
+- Discussion about Generics: https://docs.oracle.com/javase/tutorial/java/generics/index.html
 ## Week6
 ## Week7
 ## Week8
