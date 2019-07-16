@@ -1,9 +1,10 @@
-package app;
+package app.entity;
 
-import java.util.List;
+import java.util.ArrayList;
+import java.util.Iterator;
 
-public class Book {
-    enum Category {
+public class Book implements Iterable<Page> {
+    public enum Category {
         Science,
         History,
         Food,
@@ -14,9 +15,9 @@ public class Book {
 
     private String title;
     private Category category;
-    private List<Page> pages;
+    private ArrayList<Page> pages;
 
-    public Book(String title, Category category, List<Page> pages) {
+    public Book(String title, Category category, ArrayList<Page> pages) {
         this.title = title;
         this.category = category;
         this.pages = pages;
@@ -36,5 +37,10 @@ public class Book {
 
     public void setCategory(Category category) {
         this.category = category;
+    }
+
+    @Override
+    public Iterator<Page> iterator() {
+        return pages.iterator();
     }
 }

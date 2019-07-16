@@ -1,8 +1,8 @@
-package app;
+package app.entity;
 
-public class Page {
-    int pageNumber;
-    boolean hasImage;
+public class Page{
+    private int pageNumber;
+    private boolean hasImage;
 
     public Page(int pageNumber, boolean hasImage) {
         this.pageNumber = pageNumber;
@@ -23,5 +23,13 @@ public class Page {
 
     public void setHasImage(boolean hasImage) {
         this.hasImage = hasImage;
+    }
+
+    @Override
+    public String toString() {
+        return "Page{" +
+                "pageNumber=" + pageNumber +
+                ", hasImage=" + hasImage +
+                '}';
     }
 }
