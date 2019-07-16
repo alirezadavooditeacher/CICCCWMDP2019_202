@@ -1,4 +1,4 @@
-package Problem2;
+package Problem3;
 
 public class Book {
     private String author;

@@ -22,4 +22,9 @@ public class Book {
         this.title = title;
         this.year = year;
     }
+
+    @Override
+    public String toString(){
+        return this.getTitle();
+    }
 }

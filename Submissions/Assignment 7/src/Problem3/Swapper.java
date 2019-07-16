@@ -1,4 +1,4 @@
-package Problem2;
+package Problem3;
 
 import java.util.ArrayList;
 
@@ -21,5 +21,12 @@ public class Swapper<T> {
         newList.set(index1, element1);
         newList.set(index2, temp);
         return newList;
+    }
+
+    public void printList(){
+        for (int i = 0; i < list.size() ; i++){
+            System.out.println(list.get(i)+ ", ");
+        }
+        System.out.println();
     }
 }
