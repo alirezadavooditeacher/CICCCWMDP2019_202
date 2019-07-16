@@ -2,7 +2,7 @@ package Problem4;
 
 import java.util.ArrayList;
 
-public class Problem4<S extends Operatble, T> {
+public class Problem4<S extends Operatble<T>, T> {
     private ArrayList<T> list;
     private S searchQuery;
 
