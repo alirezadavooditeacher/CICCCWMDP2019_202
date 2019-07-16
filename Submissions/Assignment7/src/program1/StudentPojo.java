@@ -1,7 +1,7 @@
 package program1;
 import program4.*;
 
-public class StudentPojo implements GPACharacteristic<Integer> {
+public class StudentPojo implements GPACheck {
 	private int gpa;
 	private String name;
 	private String semester;
@@ -13,7 +13,7 @@ public class StudentPojo implements GPACharacteristic<Integer> {
 		this.semester = semester;
 	}
 
-	public Integer getGpa() {
+	public int getGpa() {
 		return gpa;
 	}
 
@@ -40,6 +40,17 @@ public class StudentPojo implements GPACharacteristic<Integer> {
 	
 	public String toString() {
 		return this.name;
+	}
+
+	@Override
+	public boolean checkGpa(int gpaCondition) {
+		// TODO Auto-generated method stub
+		if(this.gpa<=gpaCondition) {
+			return false;
+		} else {
+			return true;
+		}
+		
 	}
 	
 	

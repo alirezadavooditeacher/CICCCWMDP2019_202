@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class BusinessLogicP4<E> {
+public class BusinessLogicP4<E extends Comparable<E>> {
 	private List<E> list;
 	
 	public void addItemToList(E oobject) {
@@ -13,8 +13,9 @@ public class BusinessLogicP4<E> {
 	public void removeItemFromList(E oobject) {
 		this.list.remove(oobject);
 	}
-	public static <E extends Comparable<E>> int 
-	countNumberOfElementsWithSpecificProperty(ArrayList<E> list, E element){
+	public int 
+	countNumberOfElementsWithSpecificProperty(E element){
+		ArrayList<E> list=(ArrayList<E>) this.list;
 		Iterator<E> it = list.iterator();
 		int count=0;
 		ArrayList<E> satisfactionElements = new ArrayList<E>();
