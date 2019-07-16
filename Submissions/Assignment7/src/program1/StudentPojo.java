@@ -1,18 +1,19 @@
 package program1;
+import program4.*;
 
-public class StudentPojo{
+public class StudentPojo implements GPACharacteristic<Integer> {
 	private int gpa;
-	private String Name;
+	private String name;
 	private String semester;
 	
 	public StudentPojo(int gpa, String name, String semester) {
 		super();
 		this.gpa = gpa;
-		Name = name;
+		this.name = name;
 		this.semester = semester;
 	}
 
-	public int getGpa() {
+	public Integer getGpa() {
 		return gpa;
 	}
 
@@ -21,11 +22,11 @@ public class StudentPojo{
 	}
 
 	public String getName() {
-		return Name;
+		return this.name;
 	}
 
 	public void setName(String name) {
-		Name = name;
+		this.name = name;
 	}
 
 	public String getSemester() {
@@ -37,8 +38,9 @@ public class StudentPojo{
 	}
 
 	
-	
-	
+	public String toString() {
+		return this.name;
+	}
 	
 	
 

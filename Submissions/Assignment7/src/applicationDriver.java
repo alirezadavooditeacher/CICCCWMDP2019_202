@@ -34,13 +34,6 @@ public class applicationDriver {
 		System.out.println("The student list after changin some of its elements is: ");
 		System.out.print(studentsList);
 
-		
-
-		
-		
-
-		
-		
 	}
 
 }
