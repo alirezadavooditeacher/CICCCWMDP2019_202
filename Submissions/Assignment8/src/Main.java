@@ -1,14 +1,17 @@
 import Problem1.*;
+import Problem2.GenericSearch;
 
 import java.util.ArrayList;
 
 public class Main {
 
     public static void main(String[] args) {
+//        Problem 1
+        System.out.println("Problem 1:");
         Page page1 = new Page(1, true);
         Page page2 = new Page(2, false);
         Page page3 = new Page(3, true);
-        Page page5 = new Page(5, true);
+        Page page5 = new Page(5, false);
         ArrayList<Page> pageList = new ArrayList<>();
         pageList.add(page1);
         pageList.add(page2);
@@ -17,5 +20,11 @@ public class Main {
         Book book = new Book("Spies and Commissars", BookCategory.HISTORY, pageList);
         SearchBook searchBook = new SearchBook();
         System.out.println(searchBook.search(book));
+        System.out.println("-------------------");
+
+//        Problem 2
+        System.out.println("Problem 2:");
+        GenericSearch<Book, SearchBook, Page> genericSearch = new GenericSearch<>();
+        System.out.println(genericSearch.search(book, searchBook));
     }
 }
