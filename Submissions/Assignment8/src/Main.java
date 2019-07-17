@@ -30,6 +30,7 @@ public class Main {
         GenericSearch<Book, SearchBook, Page> genericSearch = new GenericSearch<>();
         System.out.println(genericSearch.search(book, searchBook));
         System.out.println("-------------------");
+
 //        Problem 3
         System.out.println("Problem 3:");
         GenericSearchList<Book, SearchBook, Page> genericSearchList = new GenericSearchList<>();
@@ -38,5 +39,8 @@ public class Main {
         while(pageIterator.hasNext()){
             System.out.println("Page number-" + pageIterator.next().getPageNum());
         }
+
+//        Problem 4
+
     }
 }

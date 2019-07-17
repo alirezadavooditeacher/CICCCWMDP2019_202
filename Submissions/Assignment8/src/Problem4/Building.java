@@ -7,19 +7,32 @@ public class Building {
     private int yearBuilt;
     private ArrayList<Room> roomList;
 
-    public void open(int roomNumber){
+    public Room findRoom(int roomNumber){
         for(int i = 0; i < roomList.size(); i ++){
             if(roomList.get(i).getRoomNumber() == roomNumber){
-                roomList.get(i).setLocked(false);
+                return roomList.get(i);
             }
+        }
+        return null;
+    }
+
+    public void open(int roomNumber){
+        Room room = this.findRoom(roomNumber);
+        if(room != null){
+            room.setLocked(false);
         }
     }
 
     public void close(int roomNumber){
-        for(int i = 0; i < roomList.size(); i ++){
-            if(roomList.get(i).getRoomNumber() == roomNumber){
-                roomList.get(i).setLocked(true);
-            }
+        Room room = this.findRoom(roomNumber);
+        if(room != null){
+            room.setLocked(true);
         }
+    }
+
+    public Building(String name, int yearBuilt, ArrayList<Room> roomList) {
+        this.name = name;
+        this.yearBuilt = yearBuilt;
+        this.roomList = roomList;
     }
 }
