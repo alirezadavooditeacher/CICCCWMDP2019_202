@@ -4,15 +4,18 @@ package program1;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+import program4.CheckElement;
+
 public class BusinessLogic {
 		
-	public static <E extends Comparable<E>> int 
-	countNumberOfElementsWithSpecificProperty(ArrayList<E> list, E element){
+	public static <E> int 
+	countNumberOfElementsWithSpecificProperty(ArrayList<E> listOfElements ,CheckElement<E> methodsEnabler ){
+		ArrayList<E> list = listOfElements;
 		Iterator<E> it = list.iterator();
-		int count=0;
+		int count=0;		
 		while(it.hasNext()) {
-			E property=it.next();
-			if(property.compareTo(element)>0) {
+			E elem=it.next();
+			if( methodsEnabler.check(elem)) {
 				count++;
 			}
 		}
