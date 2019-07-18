@@ -1,7 +1,7 @@
 package program1;
 import program4.*;
 
-public class StudentPojo implements GPACheck {
+public class StudentPojo {
 	private int gpa;
 	private String name;
 	private String semester;
@@ -42,16 +42,15 @@ public class StudentPojo implements GPACheck {
 		return this.name;
 	}
 
-	@Override
-	public boolean checkGpa(int gpaCondition) {
-		// TODO Auto-generated method stub
-		if(this.gpa<=gpaCondition) {
-			return false;
-		} else {
-			return true;
-		}
-		
-	}
+//	public boolean check(StudentPojo sp) {
+//		// TODO Auto-generated method stub
+//		if(sp.gpa<=20) {
+//			return false;
+//		} else {
+//			return true;
+//		}
+//		
+//	}
 	
 	
 

@@ -3,6 +3,9 @@ import java.util.Iterator;
 
 import program1.*;
 import program3.*;
+import program4.BusinessLogicP4;
+import program4.CheckElement;
+import program4.GPACheck;
 
 public class applicationDriver {
 	
@@ -20,19 +23,39 @@ public class applicationDriver {
 		
 		ArrayList<Integer> studentsGPA = new ArrayList<Integer>();
 		
-		Iterator<StudentPojo> it = studentsList.iterator();
+//		Iterator<StudentPojo> it = studentsList.iterator();
+//		
+//		while(it.hasNext()) {
+//			int sgpa = it.next().getGpa();
+//			studentsGPA.add(sgpa);
+//		}
+//		System.out.print("The number of students with a gpa greater than 60 is: ");
+//		System.out.println(BusinessLogic.countNumberOfElementsWithSpecificProperty(studentsGPA, 60));
+//		System.out.println("The student list before changin some elements is: ");
+//		System.out.println(studentsList);
+//		BusinessLogicP3.exchangeElements(studentsList, s1, s4);
+//		System.out.println("The student list after changin some of its elements is: ");
+//		System.out.print(studentsList);
+//		
+		//BusinessLogicP4<StudentPojo, GPACheck> p4 = 
+		//		new BusinessLogicP4<StudentPojo, GPACheck>();
+	
+		BusinessLogicP4<StudentPojo> p4 = 
+				new BusinessLogicP4<StudentPojo>();
+	
+		p4.addItemToList(s1);
+		p4.addItemToList(s2);
+		p4.addItemToList(s3);
+		p4.addItemToList(s4);
 		
-		while(it.hasNext()) {
-			int sgpa = it.next().getGpa();
-			studentsGPA.add(sgpa);
-		}
-		System.out.print("The number of students with a gpa greater than 60 is: ");
-		System.out.println(BusinessLogic.countNumberOfElementsWithSpecificProperty(studentsGPA, 60));
-		System.out.println("The student list before changin some elements is: ");
-		System.out.println(studentsList);
-		BusinessLogicP3.exchangeElements(studentsList, s1, s4);
-		System.out.println("The student list after changin some of its elements is: ");
-		System.out.print(studentsList);
+		//int count = p4.countNumberOfElementsWithSpecificProperty(new GPACheck());
+		
+		//CheckElement<StudentPojo> gpaCheck = (StudentPojo sp) -> {return sp.getGpa()>60;};
+		
+		int count = p4.countNumberOfElementsWithSpecificProperty(sp-> sp.getGpa()>=70);
+
+		System.out.print(count);
+		
 
 	}
 

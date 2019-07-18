@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class BusinessLogicP4<E extends Comparable<E>> {
-	private List<E> list;
+public class BusinessLogicP4<E> {
+	private List<E> list = new ArrayList<E>();
 	
 	public void addItemToList(E oobject) {
 		this.list.add(oobject);
@@ -14,17 +14,18 @@ public class BusinessLogicP4<E extends Comparable<E>> {
 		this.list.remove(oobject);
 	}
 	public int 
-	countNumberOfElementsWithSpecificProperty(E element){
+	countNumberOfElementsWithSpecificProperty(CheckElement<E> condition ){
 		ArrayList<E> list=(ArrayList<E>) this.list;
 		Iterator<E> it = list.iterator();
 		int count=0;
 		ArrayList<E> satisfactionElements = new ArrayList<E>();
 		while(it.hasNext()) {
-			E property=it.next();
-			if(property.compareTo(element)>0) {
+			E elem=it.next();
+			if( condition.check(elem)) {
 				count++;
 			}
 		}
 		return count;
 	}
+	
 }

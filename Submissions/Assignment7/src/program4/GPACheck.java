@@ -1,8 +1,14 @@
 package program4;
 
-public interface GPACheck extends Characteristic<Boolean> {
+import program1.StudentPojo;
 
-	public boolean checkGpa(int gpaCondition);
-	
+public class GPACheck implements CheckElement<StudentPojo> {
 
+	@Override
+	public boolean check(StudentPojo t) {
+		// TODO Auto-generated method stub
+		if (t.getGpa()>60) return true;
+		
+		return false;
+	}	
 }
