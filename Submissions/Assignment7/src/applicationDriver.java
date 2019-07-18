@@ -21,7 +21,7 @@ public class applicationDriver {
 		studentsList.add(s3);
 		studentsList.add(s4);
 		
-		ArrayList<Integer> studentsGPA = new ArrayList<Integer>();
+		//first solution ArrayList<Integer> studentsGPA = new ArrayList<Integer>();
 		
 //		Iterator<StudentPojo> it = studentsList.iterator();
 //		
@@ -52,11 +52,16 @@ public class applicationDriver {
 		
 		//CheckElement<StudentPojo> gpaCheck = (StudentPojo sp) -> {return sp.getGpa()>60;};
 		
-		int count = p4.countNumberOfElementsWithSpecificProperty(sp-> sp.getGpa()>=70);
+		int count = p4.countNumberOfElementsWithSpecificProperty(sp-> sp.getGpa()>=60);
 
 		System.out.print(count);
 		
-
+		System.out.println(" ");
+		System.out.println("The BusinessLogic of p1 result in: ");
+		
+		int bp1count=
+				BusinessLogic.countNumberOfElementsWithSpecificProperty(studentsList, new GPACheck());
+		System.out.print(bp1count);
 	}
 
 }
