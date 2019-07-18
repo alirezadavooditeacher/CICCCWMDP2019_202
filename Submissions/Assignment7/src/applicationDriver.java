@@ -52,7 +52,7 @@ public class applicationDriver {
 		
 		//CheckElement<StudentPojo> gpaCheck = (StudentPojo sp) -> {return sp.getGpa()>60;};
 		
-		int count = p4.countNumberOfElementsWithSpecificProperty(sp-> sp.getGpa()>=60);
+		ArrayList<StudentPojo> count = p4.countNumberOfElementsWithSpecificProperty(sp-> sp.getGpa()>=65);
 
 		System.out.print(count);
 		

@@ -13,19 +13,18 @@ public class BusinessLogicP4<E> {
 	public void removeItemFromList(E oobject) {
 		this.list.remove(oobject);
 	}
-	public int 
+	public ArrayList<E> 
 	countNumberOfElementsWithSpecificProperty(CheckElement<E> condition ){
 		ArrayList<E> list=(ArrayList<E>) this.list;
-		Iterator<E> it = list.iterator();
-		int count=0;
+		Iterator<E> it = list.iterator();		
 		ArrayList<E> satisfactionElements = new ArrayList<E>();
 		while(it.hasNext()) {
 			E elem=it.next();
 			if( condition.check(elem)) {
-				count++;
+				satisfactionElements.add(elem);
 			}
 		}
-		return count;
+		return satisfactionElements;
 	}
 	
 }
