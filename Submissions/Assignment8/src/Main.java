@@ -1,10 +1,11 @@
 import Problem1.*;
 import Problem2.GenericSearch;
-import Problem2.SearchQuery;
 import Problem3.GenericSearchList;
+import Problem4.*;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Scanner;
 
 public class Main {
 
@@ -39,8 +40,25 @@ public class Main {
         while(pageIterator.hasNext()){
             System.out.println("Page number-" + pageIterator.next().getPageNum());
         }
+        System.out.println("---------------------");
 
 //        Problem 4
-
+        System.out.println("Problem 4:");
+        Room room1 = new Room(500, 101);
+        Room room2 = new Room(200, 102);
+        Room room3 = new Room(450, 103);
+        ArrayList<Room> roomList = new ArrayList<>();
+        roomList.add(room1);
+        roomList.add(room2);
+        roomList.add(room3);
+        Building building = new Building("Huntington Apartments", 1987, roomList);
+        Manager manager = new Manager();
+        building.addObserver(manager);
+        while(building.getRoomsLocked() != 0){
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Enter a room to close/open");
+            System.out.println();
+            Intruder.unauthorizedAccess(building, scanner.nextInt());
+        }
     }
 }

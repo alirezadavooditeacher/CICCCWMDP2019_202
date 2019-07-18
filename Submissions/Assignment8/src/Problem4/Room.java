@@ -29,8 +29,9 @@ public class Room {
         this.roomNumber = roomNumber;
     }
 
-    public Room(int size, boolean isLocked) {
+    public Room(int size, int roomNumber) {
         this.size = size;
         this.isLocked = true;
+        this.roomNumber = roomNumber;
     }
 }
