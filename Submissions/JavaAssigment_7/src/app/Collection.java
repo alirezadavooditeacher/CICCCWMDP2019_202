@@ -6,6 +6,9 @@ import java.util.ArrayList;
 import Criteria.Criteria;
 
 public class Collection<T> {
+	
+	// this is a part of problem 4 implemetation
+	
     private ArrayList<T> list = new ArrayList<>();
 
     public ArrayList<T> getInternalValue() {
