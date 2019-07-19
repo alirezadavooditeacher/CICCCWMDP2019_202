@@ -1,0 +1,14 @@
+
+ 
+Will the following class compile? If not, why? 
+ 
+ 
+1.  public final class Algorithm {    
+ 2.      public static <T> T max(T x, T y) {    
+ 3.          return x > y ? x : y;    
+ 4.      }    
+ 5.  }    
+ 
+
+
+NO, it returns a compile time error it could interpreter T as a tipe
