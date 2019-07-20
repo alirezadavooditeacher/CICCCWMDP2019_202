@@ -1,0 +1,47 @@
+Problem 1: Iterator/Iterable
+The Book class consists of the following properties:
+Bookクラスは以下のプロパティで構成されています:
+• A title (String)
+• A category (Enum BookCategory: [Science, History, Food, IT, Engineering, Novel])
+• An array of pages
+
+The Page class consists of the following properties:
+Pageクラスは以下のプロパティで構成されています:
+• A pageNumber (int)
+• hasImage (boolean)
+
+1. Create the classes Book and Page.
+2. Add the mentioned properties to the Book and Page classes. Remember to follow Encapsulation. (properties defined private)
+3. Defined a getter and setter method for each property of the class book except for array of pages.
+4. Define a getter and setter method for each property of the class Page.
+5. Add a constructor for the Book and Page class.
+6. Write a class called SearchBook with an instance method called search.
+   This method is given an object from type Book and return the number of pages that have images
+   and their page number is an even number.
+6. searchBookというインスタンスメソッドを使用してSearchBookというクラスを作成します。
+   このメソッドはBook型のオブジェクトを与えられ、画像を持っているページ数を返します、
+   そしてそれらのページ番号は偶数です。
+7. Write an ApplicationDrive class to the search method you defined above properly.
+8. What is the time and space complexity of the search method? Explain why?
+Remember you need to use the Iterable/Iterator design pattern for this problem
+8.検索方法の時間と空間の複雑さは何ですか？ 理由を説明？
+この問題にはIterable / Iteratorデザインパターンを使う必要があることを忘れないでください
+
+
+Problem 2: Iterator/Iterable + Generic Type
+Solve the problem 1 with this differences:
+
+• Create a class called GenericSearch with an instance method called search.
+The search method will receive an iterable generic object instead of a book object and a predicate (condition) and return number of elements in the iterable object which holds the condition.
+
+検索メソッドは、bookオブジェクトと述語（condition）の代わりに反復可能な汎用オブジェクトを受け取り、その条件を保持している反復可能なオブジェクトの要素数(変数の数?)を返します。
+
+• Test this generic function using the Book and Page classes you defined in problem one.
+Remember in addition to the Iterable/Iterator design pattern you used for Problem 1, you need to use Generic types to solve this problem.
+
+
+Problem 3: Iterator/Iterable + Generic Type
+Solve the problem 2 with the following differences:
+• Create a class called GenericSearchList with an instance method called search. The
+search method will receive an iterable generic object (similar to problem 2) and a predicate (condition) and return a list of all elements in the list of all elements in the list, which hold the condition.
+• Test this generic function using the Book and Page classes you defined in problem one.
