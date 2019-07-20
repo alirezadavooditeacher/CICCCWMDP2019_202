@@ -1,6 +1,6 @@
 package problem4;
 
-public class Class {
+public class Room {
     private String unit;
     private int size;
     private boolean locked;

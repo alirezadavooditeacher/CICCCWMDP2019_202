@@ -1,4 +1,4 @@
-package problem1;
+package problem1_3;
 
 public class BookResult {
     private int numberOfPagesWithImages;
