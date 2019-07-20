@@ -68,12 +68,13 @@ https://docs.oracle.com/javase/tutorial/java/generics/index.html
 
 ## Week6
 - Inner/Nested/Local classes: https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html
-- Seialization
-- Lambda expression/Functional Interfaces (1)
+- Lambda expression/Functional Interfaces
 - Enum: https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html
+- Method references: https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html
 
 ## Week7
-- Lambda expression/Functional Interfaces (2)
+- Serialization
+- Multi-threading
 
 ## Week8
 
