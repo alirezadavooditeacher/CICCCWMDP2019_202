@@ -11,12 +11,12 @@ public class Main {
 
             @Override
             float perimeter() {
-                return 2 *(s1Sides[0] + s1Sides[1]);
+                return 2 *(this.getSides()[0] + this.getSides()[1]);
             }
 
             @Override
             float area() {
-                return s1Sides[0] * s1Sides[1];
+                return this.getSides()[0] * this.getSides()[1];
             }
         };
 
@@ -27,12 +27,12 @@ public class Main {
         Shape s2 = new Shape(ShapeType.SQUARE, s2Sides) {
             @Override
             float perimeter() {
-                return s2Sides[0] * 4;
+                return this.getSides()[0] * 4;
             }
 
             @Override
             float area() {
-                return s2Sides[0] * s2Sides[0];
+                return this.getSides()[0] * this.getSides()[0];
             }
         };
 
