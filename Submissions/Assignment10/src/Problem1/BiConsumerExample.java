@@ -1,3 +1,5 @@
+package Problem1;
+
 import java.util.function.BiConsumer;
 
 // Print out the addition of two numbers
@@ -11,7 +13,7 @@ public class BiConsumerExample {
 }
 
 
-//public class BiConsumerExample {
+//public class Problem1.BiConsumerExample {
 //    public static void main(String[] args){
 //
 //    }

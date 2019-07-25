@@ -1,3 +1,5 @@
+package Problem1;
+
 import java.util.function.IntConsumer;
 
 // print out the square of a number

@@ -1,3 +1,5 @@
+package Problem1;
+
 import java.util.function.DoubleBinaryOperator;
 
 // return average of two percentile values

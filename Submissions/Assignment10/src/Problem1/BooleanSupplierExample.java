@@ -1,3 +1,5 @@
+package Problem1;
+
 import java.util.function.BooleanSupplier;
 // check if 5 is bigger than 10
 public class BooleanSupplierExample {

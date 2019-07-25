@@ -1,3 +1,5 @@
+package Problem1;
+
 import java.util.function.DoubleConsumer;
 
 // prints out GPA in a appealing format

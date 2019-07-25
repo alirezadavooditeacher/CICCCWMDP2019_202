@@ -1,3 +1,5 @@
+package Problem1;
+
 import java.util.function.LongFunction;
 
 // returns an integer version of a long value if the long value is small enough

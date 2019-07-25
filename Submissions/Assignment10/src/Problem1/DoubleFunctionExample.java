@@ -1,3 +1,5 @@
+package Problem1;
+
 import java.util.function.DoubleFunction;
 
 // Check if the inputted integer is above average

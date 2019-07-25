@@ -1,3 +1,5 @@
+package Problem1;
+
 import java.util.function.DoubleUnaryOperator;
 
 // move the decimal point of a double to the right

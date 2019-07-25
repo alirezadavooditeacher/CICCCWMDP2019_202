@@ -1,3 +1,5 @@
+package Problem1;
+
 import java.util.function.IntToLongFunction;
 
 public class IntToLongFunctionExample {

@@ -1,3 +1,5 @@
+package Problem1;
+
 import java.util.function.LongUnaryOperator;
 
 // Replace all 0's in a long with 1

@@ -1,4 +1,4 @@
-// Check if an integer value is the same as a String value
+package Problem1;// Check if an integer value is the same as a String value
 
 import java.util.function.BiPredicate;
 

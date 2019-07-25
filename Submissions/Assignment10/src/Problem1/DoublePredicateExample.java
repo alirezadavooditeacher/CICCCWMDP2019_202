@@ -1,3 +1,5 @@
+package Problem1;
+
 import java.util.function.DoublePredicate;
 
 // Check if given GPA is higher than the average

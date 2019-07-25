@@ -1,3 +1,5 @@
+package Problem1;
+
 import java.util.function.DoubleToIntFunction;
 
 // round up a double and return as an int
