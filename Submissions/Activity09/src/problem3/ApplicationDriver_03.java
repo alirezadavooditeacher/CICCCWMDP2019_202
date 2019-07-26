@@ -27,10 +27,12 @@ public class ApplicationDriver_03 {
         //use mg.calculateAreaAndPerimeter to calculate perimeter and area for the Rectangle above
         mg.calculateAreaAndPerimeter(new Shape(s1Type, s1Sides) {
 
+            @Override
             float perimeter() {
                 return (this.getSides()[0] + this.getSides()[1]) * 2;
             }
 
+            @Override
             float area() {
                 return this.getSides()[0] * this.getSides()[1];
             }
@@ -42,10 +44,12 @@ public class ApplicationDriver_03 {
         //use mg.calculateAreaAndPerimeter to calculate perimeter and area for the Square above
         mg.calculateAreaAndPerimeter(new Shape(s2Type, s2Sides) {
 
+            @Override
             float perimeter() {
                 return this.getSides()[0] * 4;
             }
 
+            @Override
             float area() {
                 return (float)Math.pow(this.getSides()[0], 2);
             }
@@ -56,10 +60,12 @@ public class ApplicationDriver_03 {
         //use mg.calculateAreaAndPerimeter to calculate perimeter and area for the Circle above
         mg.calculateAreaAndPerimeter(new Shape(s3Type, s3Sides) {
 
+            @Override
             float perimeter() {
                 return (float)(this.getSides()[0] * 2 * Math.PI);
             }
 
+            @Override
             float area() {
                 return (float)(Math.pow(this.getSides()[0], 2) * Math.PI);
             }
@@ -71,10 +77,12 @@ public class ApplicationDriver_03 {
         //use mg.calculateAreaAndPerimeter to calculate perimeter and area for the Custom above
         mg.calculateAreaAndPerimeter(new Shape(s4Type, s4Sides) {
 
+            @Override
             float perimeter() {
                 return this.getSides()[0] + this.getSides()[1] + this.getSides()[2];
             }
 
+            @Override
             float area() {
                 // use Heron's formula
                 float s = (this.getSides()[0] + this.getSides()[1] + this.getSides()[2]) / 2;

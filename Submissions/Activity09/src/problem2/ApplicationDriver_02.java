@@ -7,10 +7,12 @@ public class ApplicationDriver_02 {
         int[] s1Sides = {10,20};
         Shape s1 = new Shape(Shape.ShapeType.Rectangle) {
 
+            @Override
             float perimeter() {
                 return (s1Sides[0] + s1Sides[1]) * 2;
             }
 
+            @Override
             float area() {
                 return s1Sides[0] * s1Sides[1];
             }
@@ -23,10 +25,12 @@ public class ApplicationDriver_02 {
         int[] s2Sides = {10};
         Shape s2 = new Shape(Shape.ShapeType.Square) {
 
+            @Override
             float perimeter() {
                 return s2Sides[0] * 4;
             }
 
+            @Override
             float area() {
                 return (float)Math.pow(s2Sides[0], 2);
             }
@@ -40,10 +44,12 @@ public class ApplicationDriver_02 {
         Shape s3 = new Shape(Shape.ShapeType.Circle) {
             int radius = s3Sides[0];
 
+            @Override
             float perimeter() {
                 return (float)(radius * 2 * Math.PI);
             }
 
+            @Override
             float area() {
                 return (float)(Math.pow(radius, 2) * Math.PI);
             }
@@ -56,10 +62,12 @@ public class ApplicationDriver_02 {
         int[] s4Sides = {8, 12, 12};
         Shape s4 = new Shape(Shape.ShapeType.Triangle) {
 
+            @Override
             float perimeter() {
                 return s4Sides[0] + s4Sides[1] + s4Sides[2];
             }
 
+            @Override
             float area() {
                 // use Heron's formula
                 float s = (s4Sides[0] + s4Sides[1] + s4Sides[2]) / 2;
