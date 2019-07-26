@@ -7,7 +7,7 @@ public class Student {
     private int age;
     private ArrayList<Double> grades;
 
-    Student(String name, int age, ArrayList<Double> grades){
+    public Student(String name, int age, ArrayList<Double> grades){
         this.name = name;
         this.age = age;
         this.grades = grades;
@@ -17,15 +17,15 @@ public class Student {
         this.age = age;
     }
 
-    ArrayList<Double> getGrades(){
+    public ArrayList<Double> getGrades(){
         return this.grades;
     }
 
-    String getName(){
+    public String getName(){
         return this.name;
     }
 
-    int getAge() {
+    public int getAge() {
         return this.age;
     }
 }
