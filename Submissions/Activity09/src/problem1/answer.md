@@ -8,5 +8,7 @@ reason: actual and formal argument lists differ in length
 
 ## Remove the Test64 class from your Project and add it as an inner class to the Foo1 class. Fix the bugs if you get any. Run it again. What would be the output?
 ```
-I don't understand what you want me to do in Constructor in Foo2.
+bar1 = 5
+((Foo1)this).bar1 = 60
+Foo1.this.bar1 = 5
 ```
