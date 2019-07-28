@@ -6,22 +6,33 @@ import problem3.*;
 import problem4.*;
 import problem5.*;
 import problem6.*;
+import problem7.*;
+import problem8.*;
 
 public class Driver {
     public static void main(String[] args) {
-//        problem0();
-//        problem1();
-//        problem2();
-//        problem3();
-//        problem4();
-//        problem5();
-//        problem6();
+        problem0();
+        problem1();
+        problem2();
+        problem3();
+        problem4();
+        problem5();
+        problem6();
         problem7();
+        problem8();
+    }
+
+    private static void problem8() {
+        System.out.println( "\n-------- problem 7 --------" );
+        Integer[] listOfNumbers = {1, 10, 15, -4, 109, 52, 43, 10, 10};
+        Problem8.runProblem8( listOfNumbers, 10 );
     }
 
     private static void problem7() {
         System.out.println( "\n-------- problem 7 --------" );
-
+        Integer[] listOfNumbers = {1, 10, 15, -4, 109, 52, 43, 10, 10};
+        Integer[] numbersToSearch = {10, 109, 43, 12};
+        Problem7.runProblem7(listOfNumbers, numbersToSearch );
     }
 
     private static void problem6() {
