@@ -8,17 +8,17 @@ public class Book implements Iterable<Page>{
 
 	
 	String title;
-	String category;
+	
 	public enum BookCategory {
 		Science, History, Food, IT, Engineering, Novel
 		};
-		
+	BookCategory category;
 	ArrayList<Page> pageArray;
 	
 	
 	
 	
-	public Book(String title, String category, ArrayList<Page> pageArray) {
+	public Book(String title, BookCategory category, ArrayList<Page> pageArray) {
 		super();
 		this.title = title;
 		this.category = category;
@@ -39,13 +39,15 @@ public class Book implements Iterable<Page>{
 
 
 
-	public String getCategory() {
+
+
+	public BookCategory getCategory() {
 		return category;
 	}
 
 
 
-	public void setCategory(String category) {
+	public void setCategory(BookCategory category) {
 		this.category = category;
 	}
 
