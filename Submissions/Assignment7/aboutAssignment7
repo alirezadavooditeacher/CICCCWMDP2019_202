@@ -1,0 +1,66 @@
+
+Problem1
+Write a generic method to count the number of elements in a collection that have a specific property (for example,
+Students with GPA above average, Books with specific categories).
+You need to:
+• Define and implement a generic class with a generic method called: countNumberOfElementsWithSpecificProperty
+• Design and implement a POJO class an element like Book, Student, Building, Account and define 3 properties for this class.
+• Create an ApplicationDriver class (with a main method) and test your implementation.
+• Note: You might need to create classes or interfaces in addition to the three classes mentioned above.
+
+特定のプロパティを持つコレクション内の要素の数を数えるための一般的な方法を記述します
+（たとえば、平均以上のGPAを持つ生徒、特定のカテゴリを持つ本など）。
+必要がある：
+•次の総称メソッドで総称クラスを定義して実装します。countNumberOfElementsWithSpecificProperty
+•Book、Student、Building、Accountなどの要素であるPOJOクラスを設計および実装し、このクラスに3つのプロパティを定義します。
+•（mainメソッドを使用して）ApplicationDriverクラスを作成し、実装をテストします。
+注：3つのクラスに加えてクラスかインターフェイスを作成する必要があるかもしれません上記の通り。
+
+Problem2
+Will the following class compile? If not, why?
+
+次のクラスはコンパイルされますか？ そうでない場合、なぜですか？
+-----------------------------------------------------------
+1.  public final class Algorithm {
+2.      public static <T> T max(T x, T y) {
+3.          return x > y ? x : y;
+4.      }
+5.  }
+-----------------------------------------------------------
+
+Problem3
+Write a generic method to exchange the positions of two different elements in an array.
+• Follow the same procedure as described in problem one. Just name the generic method exchangeElements
+
+配列内の2つの異なる要素の位置を交換するための汎用メソッドを書きます。
+•問題1と同じ手順に従ってください。 ジェネリックメソッドをexchangeElementsと名付けるだけです。
+
+
+Problem 4
+Write a generic class with the following three methods and properties:
+• The class has a generic property of type List.
+• addItemToList: add a generic object to the list
+• removeItemFromTheList: remove a generic object from the list
+• performOperation: Performs an operation on the list and returns a list of all items which
+  satisfies a specific search criteria. If no item is found return nill.
+
+•クラスがList型のジェネリックプロパティを持っている。
+•addItemToList：一般的なオブジェクトをリストに追加します。
+•removeItemFromTheList：リストから一般オブジェクトを削除します。
+•performOperation：リストに対して操作を実行し、特定の検索基準を満たすすべての項目のリストを返します。 項目が見つからない場合は、nillを返します。
+
+
+roblem 5
+How do you invoke the following method to find the first integer in
+a list that is relatively prime to a list of specified integers?
+
+指定された整数のリストに対して比較的素数のリスト内の最初の整数を見つけるために、
+どのようにして次のメソッドを呼び出すのですか？
+---------------------------------------------------------------------------
+1. public static <T>
+2. int findFirst(List<T> list, int begin, int end, UnaryPredicate<T> p)
+---------------------------------------------------------------------------
+
+Note that two integers a and b are relatively prime if gcd(a, b) = 1, where gcd is short for greatest common divisor.
+
+gcd（a、b）= 1の場合、2つの整数aとbは互いに素であることに注意してください。ここで、gcdは最大公約数では短い値です。
