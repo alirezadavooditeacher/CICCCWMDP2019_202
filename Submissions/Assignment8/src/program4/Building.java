@@ -9,6 +9,7 @@ public class Building implements Subject {
 	private ArrayList<Room> rooms;
 	private int lockedRooms;
 	private ArrayList<Observer> observers;
+
 	
 	public Building(String name, Integer yearBuild, ArrayList<Room> rooms) {
 		super();
@@ -53,6 +54,7 @@ public class Building implements Subject {
 			room.setLocked(false);
 			System.out.println("The room "+room.getId()+" is unlocked");
 			this.lockedRooms--;
+			this.notifyAllObservers();
 			return true;
 		}else {
 			return false;
@@ -90,6 +92,7 @@ public class Building implements Subject {
 			Observer obser = it.next();
 			obser.update(this);
 		}
+		
 	}
 
 }

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import program1.*;
 import program2.*;
 import program3.*;
-
+import program4.*;
 
 
 public class AppDriver {
@@ -47,6 +47,33 @@ public class AppDriver {
 		GenericSearchList<Book, SearchBook, Page> gsl = new GenericSearchList<Book, SearchBook, Page>();
 		System.out.println("3Program3: The  even pages with images are : "
 				+ gsl.search(aBook, asb));
+		//4Program4
+		System.out.println("----------------------");
+		System.out.println("----------------------");
+		
+		Room r1 = new Room("101",190);	
+		Room r2 = new Room("201",190);	
+		Room r3 = new Room("301",190);
+		
+		Intruder thief = new Intruder();
+		Manager manB = new Manager();
+		
+		ArrayList<Room> roList = new ArrayList<Room>();
+		roList.add(r1);
+		roList.add(r2);
+		roList.add(r3);
+		
+		Building oneB = new Building("Ali's Palace", 2010, roList);
+		oneB.addObserver(manB);
+		
+		Intruder.unauthorizedAccess(oneB, r1);
+		Intruder.unauthorizedAccess(oneB, r2);
+		Intruder.unauthorizedAccess(oneB, r3);
+		
+		
+		
+
+		
 	}
 
 }
