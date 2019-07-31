@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 import program1.*;
 import program2.*;
+import program3.*;
+
 
 
 public class AppDriver {
@@ -39,7 +41,12 @@ public class AppDriver {
 		int evenImagesPages2nd = gs.search(aBook, asb);
 		System.out.println("2Program2: The number of even pages with images is : "
 			+ evenImagesPages2nd);
-		
+		//3Program3
+		System.out.println("----------------------");
+		System.out.println("----------------------");
+		GenericSearchList<Book, SearchBook, Page> gsl = new GenericSearchList<Book, SearchBook, Page>();
+		System.out.println("3Program3: The  even pages with images are : "
+				+ gsl.search(aBook, asb));
 	}
 
 }

@@ -26,5 +26,9 @@ public class Page {
 		this.hasImage = hasImage;
 	}
 	
-	
+	public String toString() {
+		Integer pNumberInt = this.pageNumber;
+		String pNumberStr = pNumberInt.toString();
+		return pNumberStr;
+	}
 }
