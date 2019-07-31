@@ -38,7 +38,22 @@ public class Building {
 		this.rooms = rooms;
 	}
 	
-	
-	
+	public boolean open(Room room) {
+		if (room.isLocked()) {
+			room.setLocked(false);
+			return true;
+		}else {
+			return false;
+		}
+		
+	}
+	public boolean close(Room room) {
+		if(!(room.isLocked())) {
+			room.setLocked(true);
+			return true;
+		}else {
+			return false;
+		}
+	}
 
 }
