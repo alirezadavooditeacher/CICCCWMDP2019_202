@@ -60,10 +60,21 @@ https://docs.oracle.com/javase/tutorial/java/generics/index.html
 - Lecture about delegate/protocol
 - Assignment 6 about Delegate and Protocol
 - Lecture about MVC (Model-View-Controller)
+
 ## Week5
 - Discussion about Observer-Observable - The Java built-in is depricated.
 - Discussion about Generics: https://docs.oracle.com/javase/tutorial/java/generics/index.html
+- Discussiion about Iterator/Iterable - Comparator/Comparable
+
 ## Week6
+- Inner/Nested/Local classes: https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html
+- Lambda expression/Functional Interfaces
+- Enum: https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html
+- Method references: https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html
+
 ## Week7
+- Serialization
+- Multi-threading
+
 ## Week8
 
