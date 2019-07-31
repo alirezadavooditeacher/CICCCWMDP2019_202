@@ -3,6 +3,8 @@ package program1;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+
+
 public class Book implements Iterable<Page>{
 	
 
@@ -62,11 +64,13 @@ public class Book implements Iterable<Page>{
 
 	@Override
 	public Iterator<Page> iterator() {
-		// TODO Auto-generated method stub
 		PageIterator pi = 
 				new PageIterator(this.pageArray);
 		return pi;
-	};
+	}
+
+
+
 	
 
 }

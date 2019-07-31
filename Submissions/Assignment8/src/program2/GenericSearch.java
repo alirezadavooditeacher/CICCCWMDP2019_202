@@ -10,7 +10,7 @@ public class GenericSearch<E extends Iterable, U extends Query, V > {
 		int ocurrences = 0;
 		while(it.hasNext()) {
 			V thing = it.next();
-			if(search.satisfyCondition(thing)) {
+			if(search.predicate(thing)) {
 				ocurrences++;
 			}
 		}

@@ -1,6 +1,10 @@
-package program1;
+
 
 import java.util.ArrayList;
+
+import program1.*;
+import program2.*;
+
 
 public class AppDriver {
 	
@@ -23,13 +27,18 @@ public class AppDriver {
 		
 		Book aBook = new Book("History of Time", Book.BookCategory.Science, 
 				pagesArray);
-		
+		//Program1
 		SearchBook asb = new SearchBook();
 		int evenImagePages = asb.search(aBook);
 		
-		System.out.println("The number of even pages with images is : "
+		System.out.println("Program1:The number of even pages with images is : "
 				+ evenImagePages);
-		
+		System.out.println("----------------------");
+		//Program2
+		GenericSearch<Book, SearchBook, Page> gs = new GenericSearch<Book, SearchBook, Page>();
+		int evenImagesPages2nd = gs.search(aBook, asb);
+		System.out.println("2Program2: The number of even pages with images is : "
+			+ evenImagesPages2nd);
 		
 	}
 

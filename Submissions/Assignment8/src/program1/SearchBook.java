@@ -3,7 +3,9 @@ package program1;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class SearchBook {
+import program2.*;
+
+public class SearchBook implements Query<Page>{
 	
 	public int search(Book book) {
 //		ArrayList<Page> bPages = 
@@ -18,6 +20,15 @@ public class SearchBook {
 				evenImagePages++;
 		}
 		return evenImagePages;
+	}
+
+	@Override
+	public boolean predicate(Page obj) {
+		int pnumber = obj.getPageNumber();
+		if(obj.isHasImage() && pnumber%2==0) {
+			return true;
+			}
+		return false;
 	}
 
 }
