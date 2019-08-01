@@ -73,7 +73,7 @@ https://docs.oracle.com/javase/tutorial/java/generics/index.html
 - Method references: https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html
 
 ## Week7
-- Serialization
+- Serialization: https://www.tutorialspoint.com/java/java_serialization
 - Multi-threading
 
 ## Week8
