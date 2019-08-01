@@ -1,10 +1,9 @@
-import Problem1.LandChecker;
-import Problem1.PeakChecker;
+import Problem1.CastleChecker;
 
 public class Main {
 
     public static void main(String[] args){
-        int[] arr = {2,3,3,5};
-        PeakChecker.removeDuplicates(arr);
+        int[] arr = {3,1,3,5,2,3,5};
+        System.out.println("Number of castle spots found: " + CastleChecker.checkAvailability(arr));
     }
 }
