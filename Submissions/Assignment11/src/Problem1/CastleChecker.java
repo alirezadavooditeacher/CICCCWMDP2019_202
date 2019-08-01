@@ -8,16 +8,9 @@ public class CastleChecker {
         int[] shortArr = ArrayUtil.removeDuplicates(arr);
         int castleNumbers = 0;
         for(int i = 0; i < shortArr.length - 1; i++){
-            if(i == 0) {
-                int[] testArr = {shortArr[i], shortArr[i + 1]};
-                if(peakChecker.checkStart(testArr) || valleyChecker.checkStart(testArr)){
-                    castleNumbers ++;
-                }
-            } else {
-                int[] testArr = {shortArr[i - 1], shortArr[i], shortArr[i + 1]};
-                if(peakChecker.check(testArr) || valleyChecker.check(testArr)){
-                    castleNumbers ++;
-                }
+            int[] testArr = ArrayUtil.createArray(shortArr, i);
+            if(peakChecker.check(testArr) || valleyChecker.check(testArr)){
+                castleNumbers ++;
             }
         }
         return castleNumbers;

@@ -16,6 +16,16 @@ public class ArrayUtil {
         return convertedArr;
     }
 
+    public static int[] createArray(int[] arr, int index){
+        if(index != 0){
+            int[] shortArr = {arr[index - 1], arr[index], arr[index + 1]};
+            return shortArr;
+        } else {
+            int[] shortArr = {arr[index], arr[index + 1]};
+            return shortArr;
+        }
+    }
+
     private static int[] convertIntegers(ArrayList<Integer> arr){
         int[] newArr = new int[arr.size()];
         for(int i = 0; i < newArr.length; i ++){

@@ -6,4 +6,5 @@ public interface LandChecker {
 
     boolean check(int[] arr);
     boolean checkStart(int[] arr);
+    boolean checkMiddle(int[] arr);
 }
