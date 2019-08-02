@@ -70,10 +70,6 @@ public class AppDriver {
 		Intruder.unauthorizedAccess(oneB, r2);
 		Intruder.unauthorizedAccess(oneB, r3);
 		
-		
-		
-
-		
 	}
 
 }
