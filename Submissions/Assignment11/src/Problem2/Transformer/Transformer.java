@@ -12,6 +12,7 @@ public class Transformer {
     private Skill Skill;
     private String Name;
     private Team Team;
+    private boolean isDestroyed;
     private int TotalRate;
 
     public Transformer(String name, Team team ,int strength, int intelligence, int speed, int endurance, int rank, int courage, int firepower, int skill){
@@ -25,6 +26,7 @@ public class Transformer {
         Skill        = new Skill(skill);
         Name         = name;
         Team         = team;
+        isDestroyed  = false;
         TotalRate    = strength + intelligence + speed + endurance + firepower;
     }
 
@@ -54,5 +56,17 @@ public class Transformer {
 
     public Problem2.Transformer.Team getTeam() {
         return Team;
+    }
+
+    public void setRank(Problem2.Transformer.Skill rank) {
+        Rank = rank;
+    }
+
+    public boolean isDestroyed() {
+        return isDestroyed;
+    }
+
+    public void setDestroyed(boolean destroyed) {
+        isDestroyed = destroyed;
     }
 }
