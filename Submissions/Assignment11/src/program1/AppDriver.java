@@ -1,6 +1,7 @@
 package program1;
 
 import java.util.ArrayList;
+import java.util.function.BiPredicate;
 import java.util.function.Function;
 
 public class AppDriver {
@@ -15,6 +16,10 @@ public class AppDriver {
 			if(e[0]>=1) {
 				answer++;
 			}
+			//Predicates to build if statements
+			BiPredicate<Integer, Integer> bp1 = (e1,e2) -> e1 > e2 ; // read: bp1 MEANS bigger than plus 1
+			BiPredicate<Integer, Integer> bm1 = (e1,e0) -> e1 > e0 ; // read: bm1 MEANS bigger than minus 1
+			
 			for(int i = 1; i<=(lSize-1); i++) {
 				//case of 1 integer peak/valley
 				if(
@@ -24,7 +29,7 @@ public class AppDriver {
 					) {
 							answer++;
 						}
-				//TODO case of +1 integer peak/valley
+				//TODO case of +1 integer peak/valley 
 				
 			}
 			return answer;
