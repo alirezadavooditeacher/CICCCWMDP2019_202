@@ -17,11 +17,20 @@ public class AppDriver {
 				answer++;
 			}
 			//Predicates to build if statements
-			BiPredicate<Integer, Integer> bp1 = (e1,e2) -> e1 > e2 ; // read: bp1 MEANS bigger than plus 1
+			BiPredicate<Integer, Integer> bpj = (e1,e2) -> e1 > e2 ; // read: bp1 MEANS bigger than plus j
+			
+			
 			BiPredicate<Integer, Integer> bm1 = (e1,e0) -> e1 > e0 ; // read: bm1 MEANS bigger than minus 1
 			
+			BiPredicate<Integer, Integer> sm1 = (e1,e0) -> e1 == e0 ; //read: sm1 MEANS same as minus 1
+			
+			//My own version of Predicate that has an array as input.
+			
+			
+			
+			
 			for(int i = 1; i<=(lSize-1); i++) {
-				//case of 1 integer peak/valley
+				//particularcase of 1 integer peak/valley
 				if(
 						(e[i] > e[i-1] && e[i] > e[i+1])
 						||
@@ -29,6 +38,12 @@ public class AppDriver {
 					) {
 							answer++;
 						}
+//				else if (
+//						// review logic: bp1.or(bm1).test(e[i],e[i+1])
+//						) {
+//					
+//						}
+					
 				//TODO case of +1 integer peak/valley 
 				
 			}
