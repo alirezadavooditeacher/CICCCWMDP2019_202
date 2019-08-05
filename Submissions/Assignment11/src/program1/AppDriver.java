@@ -26,26 +26,23 @@ public class AppDriver {
 			
 			//My own version of Predicate that has an array as input.
 			
+			MyBiPredicate<Integer> mvp = (e0,e1,e2) -> 
+				(e1>e0 && e1>e2) || (e1<e0 && e1<e2)
+			;
 			
-			
-			
+// trigger of process: e0 != e1
+//						//then if e2 ==e1 , check if e3==e1 and so on...when e(i+j) != e1 , check if (bpj AND bm1)			
+
 			for(int i = 1; i<=(lSize-1); i++) {
 				//particularcase of 1 integer peak/valley
 				if(
-						(e[i] > e[i-1] && e[i] > e[i+1])
-						||
-						(e[i] < e[i-1] && e[i] < e[i+1])
+						
+						
+						!(sm1.test(e[i], e[i-1]))
 					) {
-							answer++;
-						}
-//				else if (
-//						// review logic: bp1.or(bm1).test(e[i],e[i+1])
-//						) {
-//					
-//						}
 					
-				//TODO case of +1 integer peak/valley 
-				
+					answer++;}
+	
 			}
 			return answer;
 		};
