@@ -2,101 +2,96 @@ package Problem2;
 
 public class Transformer {
 
-  private String name;
-  private int strength;
-  private int intelligence;
-  private int speed;
-  private int endurance;
-  private int firepower;
-  private Team team;
-  private boolean defeated;
+	private String name;
+	private int strength;
+	private int intelligence;
+	private int speed;
+	private int endurance;
+	private int firepower;
+	private Team team;
+	
+	public Transformer(String name, int strength, int itelligence, int speed, int endurance, int firepower, Team team) {
+		super();
+		this.name = name;
+		this.strength = strength;
+		this.intelligence = itelligence;
+		this.speed = speed;
+		this.endurance = endurance;
+		this.firepower = firepower;
+		this.team = team;
+	}
+	
+	@Override
+	public String toString() {
+		return "Transformer: [name=" + name + ", team=" + team + ", rank= " +  getRank()+"]";
+	}
 
-  public Transformer(String name, int strength, int itelligence, int speed, int endurance, int firepower, Team team) {
-    super();
-    this.name = name;
-    this.strength = strength;
-    this.intelligence = itelligence;
-    this.speed = speed;
-    this.endurance = endurance;
-    this.firepower = firepower;
-    this.team = team;
-  }
+	public enum Team{
+		Autobot,
+		Decption
+	}
+	
+    public int getRank() {
+        return strength + intelligence + speed + endurance + firepower;
+    }
 
-  public boolean isDefeated() {
-    return defeated;
-  }
+	public String getName() {
+		return name;
+	}
 
-  public void setDefeated(boolean defeated) {
-    this.defeated = defeated;
-  }
+	public void setName(String name) {
+		this.name = name;
+	}
 
-  @Override
-  public String toString() {
-    return "Transformer: [name=" + name + ", team=" + team + ", rank= " + getRank() + "]";
-  }
+	public int getStrength() {
+		return strength;
+	}
 
-  public enum Team {
-    Autobot, Decption
-  }
 
-  public int getRank() {
-    return strength + intelligence + speed + endurance + firepower;
-  }
+	public void setStrenght(int stenght) {
+		this.strength = stenght;
+	}
 
-  public String getName() {
-    return name;
-  }
+	public int getIntelligence() {
+		return intelligence;
+	}
 
-  public void setName(String name) {
-    this.name = name;
-  }
+	public void setIntelligence(int itelligence) {
+		this.intelligence = itelligence;
+	}
 
-  public int getStrength() {
-    return strength;
-  }
+	public int getSpeed() {
+		return speed;
+	}
 
-  public void setStrenght(int stenght) {
-    this.strength = stenght;
-  }
+	public void setSpeed(int speed) {
+		this.speed = speed;
+	}
 
-  public int getIntelligence() {
-    return intelligence;
-  }
+	public int getEndurance() {
+		return endurance;
+	}
 
-  public void setIntelligence(int itelligence) {
-    this.intelligence = itelligence;
-  }
+	public void setEndurance(int endurance) {
+		this.endurance = endurance;
+	}
 
-  public int getSpeed() {
-    return speed;
-  }
+	public int getFirepower() {
+		return firepower;
+	}
 
-  public void setSpeed(int speed) {
-    this.speed = speed;
-  }
+	public void setFirepower(int firepower) {
+		this.firepower = firepower;
+	}
 
-  public int getEndurance() {
-    return endurance;
-  }
+	public Team getTeam() {
+		return team;
+	}
 
-  public void setEndurance(int endurance) {
-    this.endurance = endurance;
-  }
-
-  public int getFirepower() {
-    return firepower;
-  }
-
-  public void setFirepower(int firepower) {
-    this.firepower = firepower;
-  }
-
-  public Team getTeam() {
-    return team;
-  }
-
-  public void setTeam(Team team) {
-    this.team = team;
-  }
-
+	public void setTeam(Team team) {
+		this.team = team;
+	}
+	
+	
+	
 }
