@@ -9,6 +9,7 @@ public class Transformer {
 	private int endurance;
 	private int firepower;
 	private Team team;
+	private boolean defeated;
 	
 	public Transformer(String name, int strength, int itelligence, int speed, int endurance, int firepower, Team team) {
 		super();
@@ -30,6 +31,15 @@ public class Transformer {
 		Autobot,
 		Decption
 	}
+	
+	public boolean isDefeated() {
+		return defeated;
+	}
+
+	public void setDefeated(boolean defeated) {
+		this.defeated = defeated;
+	}
+
 	
     public int getRank() {
         return strength + intelligence + speed + endurance + firepower;
