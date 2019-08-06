@@ -19,11 +19,11 @@ public class SolutionDisplay {
 	
 	}
 	
-	private void battleCountUp () {
+	public void battleCountUp () {
 		this.battles++;
 	}
 	
-	private void recordBattleResult(String AorD) {
+	public void recordBattleResult(String AorD) {
 		int currentWins = this.battlesWinsDictio.get(AorD);
 		int newWins = currentWins + 1;
 		this.battlesWinsDictio.put(AorD, newWins);
