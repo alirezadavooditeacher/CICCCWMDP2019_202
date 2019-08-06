@@ -8,7 +8,7 @@ public class AppDriver {
 	
 	public static void main(String[] args) {
 		
-		int[] land1 = {1,1,1,2,1,2,1}; //land with one peak, count would be 1 + initial spot = 2:
+		int[] land1 = {1,1,1,2,1,2,1}; //land with 2 peaks and 1 valley , count would be 3 + initial spot = 4:
 		
 		Function<int[],Integer> p1Solution = (e) -> {
 			Integer answer = 0;
