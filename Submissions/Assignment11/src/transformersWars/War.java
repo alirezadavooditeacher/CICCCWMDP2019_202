@@ -3,6 +3,7 @@ package transformersWars;
 import java.util.ArrayList;
 import java.util.function.BiConsumer;
 import java.util.function.BiFunction;
+import java.util.function.Consumer;
 
 public class War {
 	ArrayList<Transformer> autobot = new ArrayList<Transformer>();
@@ -58,6 +59,30 @@ public class War {
 		ta.setDestroyed(true);
 	};
 	
+	Consumer<SolutionDisplay> survivorsProvider = (sol) -> {
+		String warWinner = sol.winnerJudge();
+		ArrayList<String> lSurvive = new ArrayList<>();
+		if (warWinner == "TIE") {
+			lSurvive.add("No Survivors");
+		}
+		else if (warWinner == "Autobots") {
+			
+			for(Transformer tr : decepticon) {
+				if(!(tr.isDestroyed())){
+					lSurvive.add(tr.getName());
+				}
+			}
+		}
+		else {
+			for(Transformer tr : autobot) {
+				if(!(tr.isDestroyed())){
+					lSurvive.add(tr.getName());
+				}
+			}
+		}
+		sol.setLooserSurvirvors(lSurvive);
+	};
+	
 	MyBiConsumer<SolutionDisplay,Transformer> battle = (sol,ta,td) -> {
 		if (ta.getName() == "Optimus Prime" && td.getName() == "Predaking") {
 			for (Transformer tr : autobot) {
@@ -106,9 +131,11 @@ public class War {
 	};
 	
 	public void warEvent(SolutionDisplay sol) {
-		while (pendingBattles(sol)) {
-			
+		while (pendingBattles(sol) && !(this.isTheEnd)) {
+			int index = sol.getBattles();
+			battle.accept(sol, this.autobot.get(index), this.decepticon.get(index));
 		}
+		survivorsProvider.accept(sol);
 	}
 
 	private boolean pendingBattles(SolutionDisplay ssol) {
