@@ -1,55 +1,49 @@
-package problem1;
+package Problem1;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class Movie {
 	private String title;
 	private String studio;
 	private String rating;
-
-	public Movie(String title, String studio, String rating) {
-		this.title = title;
-		this.studio = studio;
-		this.rating = rating;
-	}
-
-	public Movie(String title, String studio) {
-		this.title = title;
-		this.studio = studio;
-		this.rating = "PG";
-	}
 	
-	public static Movie[] getPG(Movie[] array) {
-		Movie[] arrayPG = new Movie[array.length];
-		for (int i = 0; i < array.length; i++) {
-			Movie movie = array[i];
-			if (movie.rating.equals("PG")) {
-				arrayPG[i] = array[i];
+	public Movie(String title,String studio,String rating){
+		this.title=title;
+		this.studio=studio;
+		this.rating=rating;
+	}
+	public static List<String> getPG() {
+		List<String> movie = null;
+		Movie movie1 = new Movie("Casino Royal","Eon Production","PG-13");
+		Movie movie2 = new Movie("Casino Hotel","Eyn Production","R-18");
+		Movie movie3 = new Movie("Casino BattleRoyal","Elen Production","R-20");
+		Movie movie4 = new Movie("Casino Babe","Boss Production","PG-13");
+		
+		Map<String, List<String>> map1 = new HashMap<>();
+		List<String> list = new ArrayList<String>();
+		List<String> list2 = new ArrayList<String>();
+		List<String> list3 = new ArrayList<String>();
+		    list.add(movie1.title);
+		    list.add(movie4.title);                                                                                                  
+		    list2.add(movie1.title);                                    
+		    list3.add(movie2.title);	
+		    
+		map1.put(movie2.rating, list2);
+		map1.put(movie3.rating, list3);
+		map1.put(movie4.rating, list);
+		
+		for(String key: map1.keySet()) {
+			
+			if(key.equals("PG-13")) {
+				 movie =map1.get(key);	
 			}
 		}
-		
-		return arrayPG;
+		return movie;
 	}
-	
-	public static Movie createMovie() {
-		return new Movie("“Casino Royale", "Eon Productions", "PG-13");
-	}
-	
-	public static void main(String[] args) {
-		Movie m1 = new Movie("Movie1", "Studio1");
-		Movie m2 = new Movie("Movie2", "Studio2");
-		Movie m3 = new Movie("Movie3", "Studio3");
-		Movie m4 = Movie.createMovie();
-		Movie[] array = new Movie[4];
-		array[0] = m1;
-		array[1] = m2;
-		array[2] = m3;
-		array[3] = m4;
-		
-		Movie[] arrayPG = Movie.getPG(array);
-		for (int i = 0; i < arrayPG.length; i++) {
-			if (arrayPG[i] != null) {
-				System.out.println(arrayPG[i].title + " : " + arrayPG[i].studio + " : " + arrayPG[i].rating);
-			}
-		}
-	}
-
+				
+	// your code goes here
 }
+	
