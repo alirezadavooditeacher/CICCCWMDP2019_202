@@ -54,6 +54,10 @@ public class SolutionDisplay {
 	public int getBattles() {
 		return battles;
 	}
+
+	public HashMap<String, Integer> getBattlesWinsDictio() {
+		return battlesWinsDictio;
+	}
 	
 	
 	

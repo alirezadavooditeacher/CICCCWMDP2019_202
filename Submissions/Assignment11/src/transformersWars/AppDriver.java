@@ -4,9 +4,10 @@ import java.util.ArrayList;
 
 public class AppDriver {
 	
+	//Transformer(String name, int courage, int endurance, int firepower, int intelligence, int skill, int speed,	int strength
 	public static void main(String[] args) {
 		SolutionDisplay solution = new SolutionDisplay();
-		Transformer r1 = new Transformer("auto1",5,5,5,5,5,5,5,Transformer.Faction.Autobot);
+		Transformer r1 = new Transformer("auto1",5,5,5,5,5,6,5,Transformer.Faction.Autobot);
 		Transformer r2 = new Transformer("auto2",5,5,5,5,5,5,5,Transformer.Faction.Autobot);
 		Transformer r3 = new Transformer("auto3",5,5,5,5,5,5,5,Transformer.Faction.Autobot);
 		Transformer r4 = new Transformer("auto4",5,5,5,5,5,5,5,Transformer.Faction.Deception);

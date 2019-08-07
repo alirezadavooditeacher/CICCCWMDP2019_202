@@ -18,8 +18,8 @@ public class War {
 				decepticon.add(tr);
 			}
 		}
-		autobot.sort((t1,t2)-> t1.getRank()-t2.getRank());
-		decepticon.sort((t1,t2)-> t1.getRank()-t2.getRank());
+		autobot.sort((t1,t2)-> t2.getRank()-t1.getRank());
+		decepticon.sort((t1,t2)-> t2.getRank()-t1.getRank());
 	}
 	BiFunction<Transformer, Transformer, String> brule1 = (ta, td) ->{
 		String r1Winner = null;
@@ -63,7 +63,7 @@ public class War {
 		String warWinner = sol.winnerJudge();
 		ArrayList<String> lSurvive = new ArrayList<>();
 		if (warWinner == "TIE") {
-			lSurvive.add("No Survivors");
+			lSurvive.add("No looser team");
 		}
 		else if (warWinner == "Autobots") {
 			
@@ -109,7 +109,7 @@ public class War {
 			}	
 		}
 		else if(null != brule2.apply(ta , td) ) {
-			String r2Winner = brule1.apply(ta, td);
+			String r2Winner = brule2.apply(ta, td);
 			if(r2Winner == "A") {
 				bForA.accept(sol, td);
 			}
@@ -143,5 +143,15 @@ public class War {
 		int index = ssol.getBattles();
 		return autobot.size() > index && decepticon.size() > index;
 	}
+
+	public ArrayList<Transformer> getAutobot() {
+		return autobot;
+	}
+
+	public ArrayList<Transformer> getDecepticon() {
+		return decepticon;
+	}
+	
+	
 	
 }
