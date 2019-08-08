@@ -56,23 +56,29 @@ public class GameMaster {
     }
 
     private void findSurvivors(){
-        ArrayList<Transformer> losingTeam = teams.get(result.getLoser());
-        ArrayList<Transformer> survivors = new ArrayList<>();
-        losingTeam.forEach(transformer -> {
-            if(!(transformer.isDestroyed())){
-                survivors.add(transformer);
-            }
-        });
-        result.setSurvivors(survivors);
+        if(result.getWinner() != null){
+            ArrayList<Transformer> losingTeam = teams.get(result.getLoser());
+            ArrayList<Transformer> survivors = new ArrayList<>();
+            losingTeam.forEach(transformer -> {
+                if(!(transformer.isDestroyed())){
+                    survivors.add(transformer);
+                }
+            });
+            result.setSurvivors(survivors);
+        }
     }
 
     private void displayGameEnd(){
-        System.out.println("The winning team is: " + result.getWinner());
-        System.out.println("Number of battles fought is: " + result.getBattleNum());
-        System.out.println("Survivors from the losing team: ");
-        result.getSurvivors().forEach(survivor -> {
-            System.out.println(survivor.getName());
-        });
+        if(result.getWinner() != null){
+            System.out.println("The winning team is: " + result.getWinner());
+            System.out.println("Number of battles fought is: " + result.getBattleNum());
+            System.out.println("Survivors from the losing team: ");
+            result.getSurvivors().forEach(survivor -> {
+                System.out.println(survivor.getName());
+            });
+        } else {
+            System.out.println("The game ended in a tie");
+        }
     }
 
     class Result {
