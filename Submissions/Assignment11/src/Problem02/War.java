@@ -5,12 +5,12 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Wor {
+public class War {
     private ArrayList<Transformer> autobot = new ArrayList<>();
     private ArrayList<Transformer> deception = new ArrayList<>();
     private ArrayList<Battle> battles = new ArrayList<>();
 
-    public Wor(List<Transformer> transformers) {
+    public War(List<Transformer> transformers) {
         // separate transformers into two teams
         for (Transformer t : transformers) {
             if (t.getTeam() == Transformer.Team.Autobot) {
