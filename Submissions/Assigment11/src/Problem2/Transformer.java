@@ -1,47 +1,60 @@
 package Problem2;
 
 public class Transformer {
-
+	// ● Strength ● Intelligence ● Speed  ● Endurance ● Rank ● Courage ● Firepower ● Skill
+	private Team team;
 	private String name;
 	private int strength;
 	private int intelligence;
 	private int speed;
+	private int courage;
 	private int endurance;
+	private int rank;
 	private int firepower;
-	private Team team;
-	private boolean defeated;
+	private int skill;
+	private boolean defeated = false;
 	
-	public Transformer(String name, int strength, int itelligence, int speed, int endurance, int firepower, Team team) {
+	public enum Team{
+		Autobot,
+		Decepticon
+	}
+	
+	public Transformer(String name, int strength, int itelligence, int speed, int endurance, int rank, int courage, int firepower, int skill, Team team) {
 		super();
 		this.name = name;
 		this.strength = strength;
 		this.intelligence = itelligence;
 		this.speed = speed;
 		this.endurance = endurance;
+		this.rank =rank;
+		this.courage = courage;
 		this.firepower = firepower;
+		this.skill = skill;
 		this.team = team;
 	}
 	
+    public boolean isSpecial() {
+        if (name.equals("Optimus Prime") || name.equals("Predaking")) {
+            return true;
+        }
+        return false;
+    }
+	
 	@Override
 	public String toString() {
-		return "Transformer: [name=" + name + ", team=" + team + ", rank= " +  getRank()+"]";
+		return "Transformer: [name=" + name + ", team=" + team + ", rank= " +  getOveralRating()+"]";
 	}
 
-	public enum Team{
-		Autobot,
-		Decption
-	}
-	
 	public boolean isDefeated() {
 		return defeated;
 	}
 
-	public void setDefeated(boolean defeated) {
-		this.defeated = defeated;
+	public void setDefeated() {
+		this.defeated = true;
 	}
 
 	
-    public int getRank() {
+    public int getOveralRating() {
         return strength + intelligence + speed + endurance + firepower;
     }
 
@@ -100,6 +113,30 @@ public class Transformer {
 
 	public void setTeam(Team team) {
 		this.team = team;
+	}
+
+	public int getCourage() {
+		return courage;
+	}
+
+	public void setCourage(int courage) {
+		this.courage = courage;
+	}
+
+	public int getSkill() {
+		return skill;
+	}
+
+	public void setSkill(int skill) {
+		this.skill = skill;
+	}
+
+	public int getRank() {
+		return rank;
+	}
+
+	public void setRank(int rank) {
+		this.rank = rank;
 	}
 	
 	
