@@ -127,7 +127,12 @@ public class MainMenu {
 			input.nextLine();
 		}
 		else if(option.equals("4")) {
+<<<<<<< HEAD
 			System.out.println("Your overall GPA is : "+gpa);
+=======
+			System.out.println("'Your overall GPA is : "+gpa);
+			System.out.println("'Your current semester's GPA is : ???");
+>>>>>>> fa294cfb981e7258aa2b3e50376b6c861b95fdfe
 			System.out.println("\n-Enter to back menu");
 			input.nextLine();
 		}

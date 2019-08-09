@@ -76,6 +76,7 @@ public class Registration {
 		
 		System.out.println(": Objective-C: (3 units):");
 		csgrade = read.nextLine();
+<<<<<<< HEAD
 		object_C = (csgrade.equals(""))? -1 : Integer.parseInt(csgrade); //ternary operator
 		System.out.println(object_C);
 		
@@ -106,6 +107,37 @@ public class Registration {
 		System.out.println(": iOS Applications: (3 units):");
 		csgrade = read.nextLine();
 		ios_A = (csgrade.equals(""))? -1 : Integer.parseInt(csgrade);
+=======
+		object_C = (csgrade == "")? Integer.parseInt(csgrade) : -1; //ternary operator
+		
+		System.out.println(": Objective-Oriented Programming: (2 units):");
+		csgrade = read.nextLine();
+		object_OP = (csgrade == "")? Integer.parseInt(csgrade) : -1;
+		
+		System.out.println(": Problem Solving: (1 units):");
+		csgrade = read.nextLine();
+		problem_S = (csgrade == "")? Integer.parseInt(csgrade) : -1;
+		
+		System.out.println(": Project Management: (3 units):");
+		csgrade = read.nextLine();
+		project_M = (csgrade == "")? Integer.parseInt(csgrade) : -1;
+		
+		System.out.println(": Java Programming: (3 units):");
+		csgrade = read.nextLine();
+		java_P = (csgrade == "")? Integer.parseInt(csgrade) : -1;
+		
+		System.out.println(": Web Development: (2 units):");
+		csgrade = read.nextLine();
+		web_D = (csgrade == "")? Integer.parseInt(csgrade) : -1;
+		
+		System.out.println(": Andorid Programming: (2 units):");
+		csgrade = read.nextLine();
+		android_P = (csgrade == "")? Integer.parseInt(csgrade) : -1;
+		
+		System.out.println(": iOS Applications: (3 units):");
+		csgrade = read.nextLine();
+		ios_A = (csgrade == "")? Integer.parseInt(csgrade) : -1;
+>>>>>>> fa294cfb981e7258aa2b3e50376b6c861b95fdfe
 	}
 	
 	boolean checkUserInfo(){
@@ -189,7 +221,10 @@ public class Registration {
 	public void addStatementsOfAccount(ArrayList<StudentProfile> studentProfileList, ArrayList<Account> accountList,ArrayList<Courses> cosList) {
 		StudentProfile stP = new StudentProfile(firstname, lastname, gender, countryoforigin, age, yearofadmission, studentID);
 		Account ac = new Account(username,password);
+<<<<<<< HEAD
 		System.out.println("corse gd"+object_C);
+=======
+>>>>>>> fa294cfb981e7258aa2b3e50376b6c861b95fdfe
 		Courses cs = new Courses(object_C, object_OP, problem_S, project_M, java_P, web_D,
 				android_P, ios_A);
 		studentProfileList.add(stP);
