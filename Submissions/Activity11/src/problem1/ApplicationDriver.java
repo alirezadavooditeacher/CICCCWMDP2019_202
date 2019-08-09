@@ -8,6 +8,7 @@ public class ApplicationDriver {
         test1();
         test2();
         test3();
+        test4();
     }
 
     private static void result(Integer expect, Integer actual) {
@@ -72,6 +73,22 @@ public class ApplicationDriver {
         inputListOfInteger.add(40);
 
         Integer expect = 6;
+        CastleBuilder castleBuilder = new CastleBuilder();
+        Integer actual = castleBuilder.build(inputListOfInteger);
+
+        result(expect, actual);
+    }
+
+    private static void test4() {
+        ArrayList<Integer> inputListOfInteger = new ArrayList<>();
+        inputListOfInteger.add(3); // castle (beginning)
+        inputListOfInteger.add(6);
+        inputListOfInteger.add(6); // castle (peak)
+        inputListOfInteger.add(6);
+        inputListOfInteger.add(3); // castle (beginning)
+
+
+        Integer expect = 4;
         CastleBuilder castleBuilder = new CastleBuilder();
         Integer actual = castleBuilder.build(inputListOfInteger);
 
