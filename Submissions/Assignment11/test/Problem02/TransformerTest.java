@@ -6,13 +6,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class TransformerTest {
     @Test
-    void isSpecial() {
-        Transformer optimus = new Transformer("Optimus Prime", 0, 0, 0, 0, 0,Transformer.Team.Autobot);
-        Transformer predaking = new Transformer("Predaking", 0, 0, 0, 0, 0,Transformer.Team.Autobot);
-        Transformer dumb = new Transformer("Dumb", 0, 0, 0, 0, 0,Transformer.Team.Autobot);
+    void getOverallRating() {
+        Transformer transformer = new Transformer(Transformer.Team.Autobot, "The Fool", 1,2,3,4,0,0,5,0);
 
-        assertTrue(optimus.isSpecial());
-        assertTrue(predaking.isSpecial());
-        assertFalse(dumb.isSpecial());
+        assertEquals(15, transformer.getOverallRating());
     }
 }

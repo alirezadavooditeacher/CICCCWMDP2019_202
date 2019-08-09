@@ -6,34 +6,64 @@ public class Transformer {
         Deception
     }
 
+    private Team team;
+    private boolean destroyed = false;
     private String name;
     private int strength;
     private int intelligence;
     private int speed;
     private int endurance;
+    private int rank;
+    private int courage;
     private int firepower;
-    private Team team;
-    private boolean destroyed = false;
+    private int skill;
 
-    public Transformer(String name, int strength, int intelligence, int speed, int endurance, int firepower, Team team) {
+    public static Transformer createWithParams() {
+        return new Transformer();
+    }
+
+    public Transformer(Team team, String name, int strength, int intelligence, int speed, int endurance, int rank, int courage, int firepower, int skill) {
+        this.team = team;
         this.name = name;
         this.strength = strength;
         this.intelligence = intelligence;
         this.speed = speed;
         this.endurance = endurance;
+        this.rank = rank;
+        this.courage = courage;
         this.firepower = firepower;
-        this.team = team;
+        this.skill = skill;
     }
 
-    public int getRank() {
+    public Transformer() {
+    }
+
+    public int getOverallRating() {
         return strength + intelligence + speed + endurance + firepower;
     }
 
-    public boolean isSpecial() {
-        if (name.equals("Optimus Prime") || name.equals("Predaking")) {
-            return true;
-        }
-        return false;
+    public Team getTeam() {
+        return team;
+    }
+
+    public void setTeam(Team team) {
+        this.team = team;
+    }
+
+    public boolean isDestroyed() {
+        return destroyed;
+    }
+
+    public void setDestroyed(boolean destroyed) {
+        this.destroyed = destroyed;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getStrength() {
@@ -68,6 +98,22 @@ public class Transformer {
         this.endurance = endurance;
     }
 
+    public int getRank() {
+        return rank;
+    }
+
+    public void setRank(int rank) {
+        this.rank = rank;
+    }
+
+    public int getCourage() {
+        return courage;
+    }
+
+    public void setCourage(int courage) {
+        this.courage = courage;
+    }
+
     public int getFirepower() {
         return firepower;
     }
@@ -76,28 +122,12 @@ public class Transformer {
         this.firepower = firepower;
     }
 
-    public Team getTeam() {
-        return team;
+    public int getSkill() {
+        return skill;
     }
 
-    public void setTeam(Team team) {
-        this.team = team;
-    }
-
-    public boolean isDestroyed() {
-        return destroyed;
-    }
-
-    public void setDestroyed(boolean destroyed) {
-        this.destroyed = destroyed;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    public void setSkill(int skill) {
+        this.skill = skill;
     }
 
     @Override
