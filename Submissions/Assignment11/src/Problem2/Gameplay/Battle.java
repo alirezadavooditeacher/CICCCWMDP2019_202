@@ -44,8 +44,9 @@ public class Battle {
     }
 
     public void fight(){
-        System.out.println(this.autobot.getName());
-        System.out.println(this.decepitcon.getName());
+        System.out.println(this.autobot.getName() + ": " + this.autobot.getTotalRate());
+        System.out.println(this.decepitcon.getName() + ": " + this.decepitcon.getTotalRate());
+        System.out.println("--------------");
         Transformer coward = checkFleeing.apply(this.autobot, this.decepitcon);
         Transformer outskilled = checkOutskill.apply(this.autobot, this.decepitcon);
         if(coward == null && outskilled == null){

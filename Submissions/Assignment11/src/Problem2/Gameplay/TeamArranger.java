@@ -28,10 +28,10 @@ public class TeamArranger {
     public static void arrangeByRanks(ArrayList<Transformer> transformers){
         for(int i = 0; i < transformers.size() - 1; i ++){
             for(int j = 0; j < transformers.size() - i - 1; j ++){
-                if(transformers.get(i).getRank().getRange() > transformers.get(i + 1).getRank().getRange()){
-                    Skill temp = transformers.get(i).getRank();
-                    transformers.get(i).setRank(transformers.get(i + 1).getRank());
-                    transformers.get(i + 1).setRank(temp);
+                if(transformers.get(i).getRank().getRange() < transformers.get(i + 1).getRank().getRange()){
+                    Transformer temp = transformers.get(i);
+                    transformers.set(i, transformers.get(i + 1));
+                    transformers.set(i + 1, temp);
                 }
             }
         }
