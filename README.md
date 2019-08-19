@@ -29,6 +29,9 @@ https://www.upgrad.com/blog/mvc-architecture-in-java/
 https://www.tutorialspoint.com/design_pattern/mvc_pattern.htm
 Standford Video: https://www.youtube.com/watch?v=gI3pz7eFgfo&t=645s
 
+Genrics:
+https://docs.oracle.com/javase/tutorial/java/generics/index.html
+
 
 # Course TimeTable
 ## Week1
@@ -57,9 +60,26 @@ Standford Video: https://www.youtube.com/watch?v=gI3pz7eFgfo&t=645s
 - Lecture about delegate/protocol
 - Assignment 6 about Delegate and Protocol
 - Lecture about MVC (Model-View-Controller)
+
 ## Week5
 - Discussion about Observer-Observable - The Java built-in is depricated.
+- Discussion about Generics: https://docs.oracle.com/javase/tutorial/java/generics/index.html
+- Discussiion about Iterator/Iterable - Comparator/Comparable
+
 ## Week6
+- Inner/Nested/Local classes: https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html
+- Lambda expression/Functional Interfaces
+- Enum: https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html
+- Method references: https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html
+
 ## Week7
+- Serialization: 
+- --- https://www.tutorialspoint.com/java/java_serialization
+- --- https://www.geeksforgeeks.org/serialization-in-java/
+- --- https://www.geeksforgeeks.org/transient-keyword-java/
+- Multi-threading
+- --- https://www.tutorialspoint.com/java/java_multithreading
+- --- https://www.tutorialspoint.com/java/java_thread_synchronization.htm
+
 ## Week8
 
