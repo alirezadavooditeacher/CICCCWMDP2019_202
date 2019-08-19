@@ -1,0 +1,15 @@
+• Add the following class Test64 to your project and run it. What is the output?
+
+  bar1 = 5
+  ((Foo1)this).bar1 = 60
+  Foo1.this.bar1 = 5
+
+
+• Remove the Test64 class from your Project and add it as an inner class to the Foo1 class.
+  Fix the bugs if you get any. Run it again. What would be the output?
+
+  bar1 = 5
+  ((Foo1)this).bar1 = 60
+  Foo1.this.bar1 = 5
+
+

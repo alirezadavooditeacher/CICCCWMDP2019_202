@@ -1,0 +1,11 @@
+Problem 3: Anonymous class as a parameter of a method
+We are going to implement a problem similar to Problem 2, but this time we are going to use inline anonymous class.
+Consider the same Shape class as in Problem 2.
+Change the Application Drive class as following and add a MyGeometry class as following.
+Complete implementation of the main method.
+
+
+Problem 3: Anonymous class as a parameter of a method
+問題2と同様の問題を実装しますが、今回はインラインの匿名クラスを使用します。
+問題2と同じShapeクラスを考えます。Application Driveクラスを次のように変更し、
+MyGeometryクラスを次のように追加します。 mainメソッドの完全実装
